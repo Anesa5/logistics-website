@@ -26,35 +26,35 @@ export default function Hero() {
         <section className="hero">
             <div className="container hero-inner">
                 <div className="reveal is-visible">
-                    <span className="hero-eyebrow">Global Freight &amp; ICL Logistics</span>
+                    <span className="hero-eyebrow">Reliable Logistics. Smarter Shipping.</span>
                     <h1>Connecting Destinations,<br /><span>Delivering Trust</span></h1>
                     <p className="hero-copy">
-                        From a single urgent consignment to a complete supply chain, we
-                        bring the people, planning, and practical control to move your
-                        goods across worldwide — on time, every time.
+                        From freight forwarding to global procurement, ICL Logistics helps
+                        businesses manage the movement of goods with practical solutions, clear
+                        communication, and dependable coordination.
                     </p>
 
                     <div className="hero-buttons">
-                        <Link href="/services" className="btn btn-orange">
-                            Our Services <i className="fa-solid fa-arrow-right" />
-                        </Link>
-                        <Link href="/contact" className="btn btn-outline-white">
-                            Get a Quote <i className="fa-solid fa-arrow-right" />
+                        <a href="tel:+923111444224" className="btn btn-orange">
+                            <i className="fa-solid fa-phone" /> Call Us Now
+                        </a>
+                        <Link href="/about" className="btn btn-outline-white">
+                            Learn More <i className="fa-solid fa-arrow-right" />
                         </Link>
                     </div>
 
                     <div className="hero-facts">
                         <div className="hero-fact">
                             <i className="fa-solid fa-globe" />
-                            <div><strong>38+</strong><span>Countries Served</span></div>
-                        </div>
-                        <div className="hero-fact">
-                            <i className="fa-solid fa-truck-fast" />
-                            <div><strong>12k+</strong><span>Shipments / Year</span></div>
+                            <div><strong>Global Network</strong><span>38+ Countries Served</span></div>
                         </div>
                         <div className="hero-fact">
                             <i className="fa-solid fa-award" />
-                            <div><strong>16 Yrs</strong><span>In Business</span></div>
+                            <div><strong>14 Years</strong><span>Industry Experience</span></div>
+                        </div>
+                        <div className="hero-fact">
+                            <i className="fa-solid fa-layer-group" />
+                            <div><strong>Integrated Solutions</strong><span>Multiple Service Options</span></div>
                         </div>
                     </div>
                 </div>
@@ -65,21 +65,53 @@ export default function Hero() {
                         <p>Tell us what needs to move. We&apos;ll reply within one business hour.</p>
 
                         <div className="field">
-                            <label htmlFor="quote-name">Full Name</label>
-                            <input id="quote-name" type="text" placeholder="e.g. Jane Doe" value={name} onChange={(e) => setName(e.target.value)} />
+                            <label htmlFor="quote-name">Name</label>
+                            <input id="quote-name" type="text" placeholder="Full Name" value={name} onChange={(e) => setName(e.target.value)} />
                         </div>
 
                         <div className="field">
-                            <label htmlFor="quote-email">Email Address</label>
+                            <label htmlFor="quote-company">Company Name</label>
+                            <input id="quote-company" type="text" placeholder="Your Company" />
+                        </div>
+
+                        <div className="field">
+                            <label htmlFor="quote-email">Email</label>
                             <input id="quote-email" type="email" placeholder="you@company.com" value={email} onChange={(e) => setEmail(e.target.value)} />
                         </div>
 
                         <div className="field">
-                            <label htmlFor="quote-service">Service Needed</label>
-                            <select id="quote-service" defaultValue="">
+                            <label htmlFor="quote-phone">Phone</label>
+                            <input id="quote-phone" type="tel" placeholder="+92 300 1234567" />
+                        </div>
+
+                        <div className="field">
+                            <label htmlFor="quote-businesstype">Business Type</label>
+                            <select id="quote-businesstype">
+                                <option value="">Select Business Type</option>
+                                <option value="Manufacturing">Manufacturing</option>
+                                <option value="Retail">Retail & FMCG</option>
+                                <option value="Textiles">Textiles & Apparel</option>
+                                <option value="Electronics">Electronics</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+
+                        <div className="field">
+                            <label htmlFor="quote-service">Services Needed</label>
+                            <select id="quote-service">
                                 {SERVICES.map((s) => (
                                     <option key={s.slug} value={s.slug}>{s.title}</option>
                                 ))}
+                            </select>
+                        </div>
+
+                        <div className="field">
+                            <label htmlFor="quote-shipping">Shipping Method</label>
+                            <select id="quote-shipping">
+                                <option value="Air">Air Freight</option>
+                                <option value="Ocean">Ocean Freight</option>
+                                <option value="Road">Road Transport</option>
+                                <option value="Not Sure">Not Sure Yet</option>
                             </select>
                         </div>
 

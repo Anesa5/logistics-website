@@ -15,15 +15,46 @@ export default function HomePage() {
       <HighlightsStrip />
       <MovingBand />
 
-      {/* Services */}
+      {/* SECTION 2: Introduction */}
       <section className="section">
+        <div className="container split">
+          <Reveal className="split-visual">
+            <div className="split-visual-main">
+              <i className="fa-solid fa-handshake" />
+            </div>
+            <div className="split-visual-badge">
+              <strong>14+</strong>
+              <span>Years Experience</span>
+            </div>
+          </Reveal>
+
+          <Reveal className="split-copy">
+            <span className="section-eyebrow">ICL Logistics</span>
+            <h2>Logistics That Works for Your Business</h2>
+            <p>
+              Since 2012, ICL Logistics has been supporting business operations through freight forwarding, transportation, procurement, and supply chain services. Based in Pakistan, we work to simplify the movement of goods, coordinate the details, and help customers make informed shipping decisions.
+            </p>
+            <p>
+              Whether you are importing materials, exporting finished products, or managing ongoing cargo requirements, we aim to make logistics easier to manage.
+            </p>
+            <p>
+              With a practical understanding of business logistics, ICL Logistics focuses on clear communication, dependable coordination, and solutions that meet each customer's operational requirements.
+            </p>
+            <Link href="/about" className="btn btn-blue mt-4">
+              More About Us <i className="fa-solid fa-arrow-right" />
+            </Link>
+          </Reveal>
+        </div>
+      </section>
+
+      {/* SECTION 3: Services */}
+      <section className="section section-bg-gray">
         <div className="container">
           <div className="section-head reveal is-visible">
             <span className="section-eyebrow">What We Do</span>
             <h2>Complete Logistics Solutions</h2>
             <p>
-              Every lane has its own logic. We bring the people, planning,
-              and practical control to make yours work better.
+              Simplifying logistics, reducing costs, and keeping supply chains moving with reliable, end-to-end solutions.
             </p>
           </div>
 
@@ -35,140 +66,87 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* About Split */}
-      <section className="section section-bg-gray">
-        <div className="container split">
-          <Reveal className="split-visual">
-            <div className="split-visual-main">
-              <i className="fa-solid fa-truck-fast" />
-            </div>
-            <div className="split-visual-badge">
-              <strong>16+</strong>
-              <span>Years Experience</span>
-            </div>
-          </Reveal>
-
-          <Reveal className="split-copy">
-            <span className="section-eyebrow">Why Choose Us</span>
-            <h2>The Partner You Can Rely On</h2>
-            <p>
-              We built the logistics partner we always wanted to work with.
-              Global reach, local attention, and a team that takes the
-              outcome personally — because your business depends on it.
-            </p>
-
-            <ul className="check-list">
-              {[
-                'One accountable operations team',
-                'Updates with signal, not noise',
-                'Plans built for real-world change',
-                'Global reach, local attention',
-                'Fully insured cargo programmes',
-                'Transparent, honest pricing',
-              ].map((item) => (
-                <li key={item}><i className="fa-solid fa-check" /> {item}</li>
-              ))}
-            </ul>
-
-            <Link href="/about" className="btn btn-blue">
-              Learn More <i className="fa-solid fa-arrow-right" />
-            </Link>
-          </Reveal>
-        </div>
-      </section>
-
-      {/* Stats */}
+      {/* SECTION 7: Central Banner (Stats) */}
       <section className="section section-bg-blue">
         <div className="container">
           <div className="section-head reveal is-visible">
-            <span className="section-eyebrow" style={{ color: 'var(--orange)' }}>By the Numbers</span>
-            <h2>Scale Without Losing the Thread</h2>
+            <span className="section-eyebrow" style={{ color: 'var(--orange)' }}>Experience That Moves Business Forward</span>
+            <h2>Serving Business Logistics Needs Since 2012</h2>
             <p style={{ color: 'rgba(255,255,255,0.75)' }}>
-              Every shipment is connected to a promise. We keep the full
-              picture in view, so your team can make decisions with confidence.
+              Established in 2012, ICL Logistics delivers practical freight forwarding and logistics solutions through professional coordination, efficient planning, and a clear understanding of business needs.
             </p>
           </div>
+
+          {/* Using StatsCounter component but we'll update the text inside it later if needed */}
           <StatsCounter />
         </div>
       </section>
 
-      {/* Testimonials */}
+      {/* SECTION 5: Industries We Serve */}
       <section className="section">
         <div className="container">
           <div className="section-head reveal is-visible">
-            <span className="section-eyebrow">Testimonials</span>
-            <h2>What Our Clients Say</h2>
-            <p>Real feedback from operations teams who ship with us every week.</p>
+            <span className="section-eyebrow">Industries We Serve</span>
+            <h2>Supporting the Businesses That Keep Trade Moving</h2>
+            <p>ICL Logistics supports business shipping and sourcing requirements across relevant sectors, subject to cargo type and service availability.</p>
           </div>
 
-          <div className="testimonials-grid">
-            {TESTIMONIALS.map((t) => (
-              <Reveal key={t.name}>
-                <div className="testimonial">
-                  <div className="testimonial-stars">
-                    {Array.from({ length: 5 }).map((_, i) => (
-                      <i key={i} className="fa-solid fa-star" />
-                    ))}
-                  </div>
-                  <p>{t.quote}</p>
-                  <div className="testimonial-author">
-                    <div className="testimonial-avatar">{t.initials}</div>
-                    <div>
-                      <strong>{t.name}</strong>
-                      <span>{t.role}</span>
-                    </div>
-                  </div>
+          <div className="industry-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(250px, 1fr))', gap: '20px' }}>
+            {[
+              'Manufacturing & Industrial Supplies', 'Retail, Wholesale & FMCG', 'Textiles, Apparel & Leather',
+              'Electronics, Electrical & Technology', 'Automotive & Engineering', 'Food, Beverage & Agriculture',
+              'Pharmaceuticals & Healthcare', 'Construction & Building Materials', 'Chemicals, Plastics & Packaging',
+              'Energy, Oil & Gas', 'E-commerce & Consumer Goods', 'Importers, Exporters & Trading',
+              'Government & Public Sector', 'General Commercial & Project Cargo'
+            ].map((ind, i) => (
+              <Reveal key={i} delay={i * 20}>
+                <div className="industry-item" style={{ background: '#fff', padding: '20px', borderRadius: '12px', border: '1px solid var(--line)', display: 'flex', alignItems: 'center', gap: '12px', fontWeight: 500 }}>
+                  <i className="fa-solid fa-check-circle" style={{ color: 'var(--orange)' }} /> {ind}
                 </div>
               </Reveal>
             ))}
           </div>
+          <div style={{ textAlign: 'center', marginTop: '40px' }}>
+            <Link href="/services" className="btn btn-blue">Explore Services <i className="fa-solid fa-arrow-right" /></Link>
+          </div>
         </div>
       </section>
 
-      {/* Blog */}
-      <section className="section section-bg-gray">
+      {/* SECTION 8: Certifications */}
+      <section className="section section-bg-gray" style={{ padding: '60px 0' }}>
         <div className="container">
-          <div className="section-head reveal is-visible">
-            <span className="section-eyebrow">Latest Insights</span>
-            <h2>From Our Blog</h2>
-            <p>
-              Practical thinking on freight, supply chains, and the details
-              that decide whether a shipment arrives on time.
-            </p>
+          <div className="section-head reveal is-visible" style={{ marginBottom: '30px' }}>
+            <h3 style={{ fontSize: '20px', marginBottom: '10px' }}>Industry Memberships & Certifications</h3>
+            <p style={{ fontSize: '15px' }}>Committed to professional standards, reliable coordination, and trusted logistics partnerships.</p>
           </div>
-
-          <div className="blog-grid">
-            {ARTICLES.slice(0, 3).map((a) => (
-              <BlogCard key={a.slug} article={a} />
-            ))}
-          </div>
-
-          <div style={{ textAlign: 'center', marginTop: 46 }}>
-            <Link href="/blog" className="btn btn-blue">
-              View All Articles <i className="fa-solid fa-arrow-right" />
-            </Link>
+          <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '30px', alignItems: 'center', opacity: 0.7 }}>
+            {/* Note: Replace these text with <img> tags for actual logos */}
+            <h4 style={{ fontSize: '24px', fontWeight: 800 }}>PIFFA</h4>
+            <h4 style={{ fontSize: '24px', fontWeight: 800 }}>FIATA</h4>
+            <h4 style={{ fontSize: '24px', fontWeight: 800 }}>ISO 9001</h4>
+            <h4 style={{ fontSize: '24px', fontWeight: 800 }}>IATA</h4>
+            <h4 style={{ fontSize: '24px', fontWeight: 800 }}>LCCI</h4>
           </div>
         </div>
       </section>
 
-      {/* CTA */}
+      {/* SECTION 10: Final CTA */}
       <section className="cta-band">
         <div className="container cta-inner">
           <Reveal>
             <h2>Ready to Move Your Freight?</h2>
             <p>
-              Give us the shape of the challenge. We&apos;ll help you find the
-              cleanest route through it — with a quote in 24 hours.
+              Tell us what you need to ship, source, or manage. ICL Logistics is ready to discuss a suitable solution for your business.
             </p>
           </Reveal>
 
           <Reveal className="cta-actions">
-            <Link href="/contact" className="btn btn-orange">
-              Request a Quote <i className="fa-solid fa-arrow-right" />
-            </Link>
-            <Link href="/services" className="btn btn-outline-white">
-              Explore Services
-            </Link>
+            <a href="tel:+923111444224" className="btn btn-orange">
+              <i className="fa-solid fa-phone" /> Call Now
+            </a>
+            <a href="https://wa.me/923111444224" target="_blank" rel="noopener noreferrer" className="btn btn-outline-white">
+              <i className="fa-brands fa-whatsapp" /> WhatsApp
+            </a>
           </Reveal>
         </div>
       </section>

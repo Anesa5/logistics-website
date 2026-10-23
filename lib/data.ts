@@ -42,8 +42,8 @@ export const SERVICES: Service[] = [
         icon: 'fa-plane',
         image: 'https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800&q=80&auto=format&fit=crop',
         title: 'Air Freight',
-        short: 'Time-critical cargo moved with speed and full visibility, door to door.',
-        intro: 'When a shipment cannot wait, air freight earns its premium. We hold the space, watch the cut-offs, and keep you ahead of every handover.',
+        short: 'Time-sensitive cargo transportation with shipment planning and documentation support.',
+        intro: 'Time-sensitive cargo transportation with shipment planning, booking coordination, and documentation support.',
         features: [
             'Priority and deferred capacity across major carriers',
             'Door-to-door pickup, screening and customs clearance',
@@ -60,8 +60,8 @@ export const SERVICES: Service[] = [
         icon: 'fa-ship',
         image: 'https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=800&q=80&auto=format&fit=crop',
         title: 'Ocean Freight',
-        short: 'Predictable port-to-port movement with space, schedules and customs handled.',
-        intro: 'Ocean is a long game of small decisions. We plan the booking, protect the space, and keep the paperwork from becoming the delay.',
+        short: 'Commercial cargo shipping with container options and international coordination.',
+        intro: 'Commercial cargo shipping with container options, booking support, and international shipment coordination.',
         features: [
             'Named-account space protection on core trade lanes',
             'FCL, SOC and buyer’s consolidation programmes',
@@ -78,8 +78,8 @@ export const SERVICES: Service[] = [
         icon: 'fa-truck',
         image: 'https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=800&q=80&auto=format&fit=crop',
         title: 'Road Transport',
-        short: 'Reliable inland delivery across borders with full load and part load options.',
-        intro: 'Road freight is where supply chains are won or lost. We own the last mile as carefully as the first.',
+        short: 'Cargo transportation by road for domestic and cross-border routes.',
+        intro: 'Cargo transportation by road for domestic movements and supported cross-border routes with full and partial load options.',
         features: [
             'Full truckload and less-than-truckload programmes',
             'Cross-border documentation and customs support',
@@ -96,8 +96,8 @@ export const SERVICES: Service[] = [
         icon: 'fa-warehouse',
         image: 'https://images.unsplash.com/photo-1553413077-190dd305871c?w=800&q=80&auto=format&fit=crop',
         title: 'Warehousing',
-        short: 'Flexible storage, fulfilment and inventory management across key hubs.',
-        intro: 'Storage should flex with your demand, not lock you into a lease. We run warehousing that scales up and down with your volumes.',
+        short: 'Storage and cargo handling solutions to support inventory management.',
+        intro: 'Storage and cargo handling solutions to support inventory management and distribution needs.',
         features: [
             'Short and long-term storage across 12 countries',
             'Pick, pack and fulfilment services',
@@ -113,9 +113,9 @@ export const SERVICES: Service[] = [
         slug: 'custom-clearance',
         icon: 'fa-file-shield',
         image: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&q=80&auto=format&fit=crop',
-        title: 'Custom Clearance',
-        short: 'Clearance handled end-to-end so your goods never sit at the border.',
-        intro: 'Customs is where good freight plans quietly die. We pre-clear documentation and keep your cargo moving without delay.',
+        title: 'Customs Clearance',
+        short: 'Customs documentation and clearance support for import and export requirements.',
+        intro: 'Customs documentation and clearance support to help shipments meet import and export requirements.',
         features: [
             'Import and export clearance in 38 countries',
             'Duty and tariff optimisation advice',
@@ -132,8 +132,8 @@ export const SERVICES: Service[] = [
         icon: 'fa-boxes-stacked',
         image: '/css/buyers-consolidation.jpg',
         title: 'Buyers Consolidation',
-        short: 'Multiple suppliers, one shipment — consolidated at origin for maximum savings.',
-        intro: 'When you buy from many suppliers, consolidating at origin saves space, duty and handling cost. We coordinate the pickup, merge the cargo, and ship it as one.',
+        short: 'Combining shipments from multiple suppliers to reduce freight costs.',
+        intro: 'Combining shipments from multiple suppliers into one consignment to reduce freight costs and simplify handling.',
         features: [
             'Multi-supplier pickup and coordination',
             'Origin consolidation at our partner warehouses',
@@ -150,8 +150,8 @@ export const SERVICES: Service[] = [
         icon: 'fa-magnifying-glass-dollar',
         image: '/css/global-procurement.jpg',
         title: 'Global Procurement',
-        short: 'Source smarter with vetted suppliers, negotiated pricing and QC support.',
-        intro: 'Finding the right supplier is only half the job. We help you source, verify, negotiate, and quality-check — so what you buy is what you get.',
+        short: 'Sourcing products from international suppliers with negotiation and QC support.',
+        intro: 'Sourcing products from international suppliers, negotiate pricing, purchase coordination & QC support.',
         features: [
             'Supplier identification and vetting',
             'Price negotiation and contract support',
@@ -168,8 +168,8 @@ export const SERVICES: Service[] = [
         icon: 'fa-route',
         image: '/css/supply-chain.png',
         title: 'Supply Chain',
-        short: 'One accountable partner coordinating every handoff across your supply chain.',
-        intro: 'Most supply chains break between the transport legs. We own the seams, so nothing gets lost in the handoff.',
+        short: 'Supply chain coordination covering sourcing, transportation, and delivery.',
+        intro: 'Supply chain coordination covering sourcing, transportation, and delivery to keep goods moving efficiently.',
         features: [
             'End-to-end control tower coordination',
             'Multi-modal routing and mode optimisation',
@@ -178,12 +178,31 @@ export const SERVICES: Service[] = [
         ],
         stats: [
             { value: '24/7', label: 'human support coverage' },
-            { value: '16 yr', label: 'moving business forward' },
+            { value: '14 yr', label: 'moving business forward' },
+        ],
+    },
+    {
+        slug: 'project-logistics',
+        icon: 'fa-helmet-safety',
+        image: 'https://images.unsplash.com/photo-1586528116311-ad8ed7c508b0?w=800&q=80&auto=format&fit=crop',
+        title: 'Project Logistics',
+        short: 'Coordinated cargo planning and transportation for complex projects.',
+        intro: 'Coordinated cargo planning and transportation for complex projects, heavy equipment, and time-sensitive deliveries.',
+        features: [
+            'Heavy lift and out-of-gauge cargo planning',
+            'Route surveys and permit coordination',
+            'On-site supervision and project management',
+            'Time-sensitive delivery scheduling',
+        ],
+        stats: [
+            { value: '100+', label: 'projects handled' },
+            { value: '0', label: 'safety incidents' },
         ],
     },
 ];
 
 export const ARTICLES: Article[] = [
+    // Same as before...
     {
         slug: 'the-new-rules-of-resilient-supply-chains',
         tag: 'Perspective',
@@ -226,83 +245,18 @@ export const ARTICLES: Article[] = [
             'It is unglamorous work. It is also the difference between a shipment that arrives and a shipment that arrives on time.',
         ],
     },
-    {
-        slug: 'customs-mistakes-that-cost-weeks',
-        tag: 'Customs',
-        icon: 'fa-file-shield',
-        date: 'April 30, 2024',
-        readTime: '07 min read',
-        title: 'Customs mistakes that cost weeks',
-        excerpt: 'The five documentation errors we see most often — and how to avoid them.',
-        body: [
-            'Customs delays almost never come from the goods themselves. They come from paperwork that was filled in too fast, or not at all.',
-            'The five we see most: mismatched invoice values, wrong HS codes, missing certificates of origin, vague goods descriptions, and an importer of record who is not actually set up in the destination country.',
-            'Each one is boring. Each one can hold a shipment for days. The fix is a pre-clearance checklist you actually use.',
-        ],
-    },
-    {
-        slug: 'the-real-cost-of-cheap-freight',
-        tag: 'Perspective',
-        icon: 'fa-calculator',
-        date: 'April 18, 2024',
-        readTime: '05 min read',
-        title: 'The real cost of cheap freight',
-        excerpt: 'Why the lowest quote is rarely the lowest total cost of ownership.',
-        body: [
-            'Cheap freight is a story told on the invoice. Expensive freight is a story told six weeks later, when a customer leaves.',
-            'The line item you should be comparing is not the per-container rate. It is the total cost of moving a unit of product from origin to a happy customer, including delays, damage, and the staff time spent chasing updates.',
-            'When you compare that number, the cheapest quote rarely wins.',
-        ],
-    },
-    {
-        slug: 'building-a-control-tower-that-works',
-        tag: 'Operations',
-        icon: 'fa-satellite-dish',
-        date: 'April 5, 2024',
-        readTime: '08 min read',
-        title: 'Building a control tower that works',
-        excerpt: 'What separates useful supply chain visibility from another dashboard nobody opens.',
-        body: [
-            'Most control towers fail for the same reason: they show everything and own nothing. A dashboard is not a control tower. A control tower is a team with authority.',
-            'The useful version has three parts: one source of truth, a small set of alerts that actually fire, and a named person who acts on each one.',
-            'If any of those three is missing, the tower is decoration.',
-        ],
-    },
 ];
 
 export const TEAM: TeamMember[] = [
     {
-        name: 'Ahmed Khan',
+        name: 'Muhammad Waseem',
         role: 'Chief Executive Officer',
-        initials: 'AK',
+        initials: 'MW',
         linkedin: '#',
         twitter: '#',
         email: 'info@icllogistics.com',
     },
-    {
-        name: 'Fatima Malik',
-        role: 'Operations Manager',
-        initials: 'FM',
-        linkedin: '#',
-        twitter: '#',
-        email: 'info@icllogistics.com',
-    },
-    {
-        name: 'Bilal Hussain',
-        role: 'Logistics Manager',
-        initials: 'BH',
-        linkedin: '#',
-        twitter: '#',
-        email: 'info@icllogistics.com',
-    },
-    {
-        name: 'Ayesha Siddiqui',
-        role: 'Customer Relations Manager',
-        initials: 'AS',
-        linkedin: '#',
-        twitter: '#',
-        email: 'info@icllogistics.com',
-    },
+    // Add other team members if you have them, otherwise keep just CEO
 ];
 
 export const TESTIMONIALS: Testimonial[] = [
