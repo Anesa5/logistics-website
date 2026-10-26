@@ -99,7 +99,7 @@ export default function HomePage() {
 
             </div>
             <div className="split-visual-badge">
-              <strong>16+</strong>
+              <strong>14+</strong>
               <span>Years Experience</span>
             </div>
           </Reveal>

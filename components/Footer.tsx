@@ -16,10 +16,18 @@ export default function Footer() {
                         the last, we keep your business moving across worldwide.
                     </p>
                     <div className="footer-social">
-                        <a href="#" aria-label="Facebook"><i className="fa-brands fa-facebook-f" /></a>
-                        <a href="#" aria-label="Twitter"><i className="fa-brands fa-twitter" /></a>
-                        <a href="#" aria-label="LinkedIn"><i className="fa-brands fa-linkedin-in" /></a>
-                        <a href="#" aria-label="Instagram"><i className="fa-brands fa-instagram" /></a>
+                        <a href="https://www.facebook.com/globalventurepl" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                            <i className="fa-brands fa-facebook-f" />
+                        </a>
+                        <a href="https://x.com/globalventurepl" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                            <i className="fa-brands fa-twitter" />
+                        </a>
+                        <a href="https://www.linkedin.com/company/global-venturepl" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                            <i className="fa-brands fa-linkedin-in" />
+                        </a>
+                        <a href="https://www.instagram.com/globalventurepl/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                            <i className="fa-brands fa-instagram" />
+                        </a>
                     </div>
                 </div>
 
@@ -58,7 +66,7 @@ export default function Footer() {
                         </div>
                         <div className="footer-contact-item">
                             <i className="fa-solid fa-envelope" />
-                            <a href="mailto:info@logistics.com">info@icllogisticgroup.com</a>
+                            <a href="mailto:info@icllogisticgroup.com">info@icllogisticgroup.com</a>
                         </div>
                     </div>
 
@@ -74,7 +82,7 @@ export default function Footer() {
             </div>
 
             <div className="container footer-bottom">
-                <span>© 2024 Logistics. All rights reserved.</span>
+                <span>© 2024 ICL Logistics. All rights reserved.</span>
                 <div className="footer-bottom-links">
                     <a href="#">Privacy Policy</a>
                     <a href="#">Terms of Service</a>

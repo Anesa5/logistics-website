@@ -2933,3 +2933,123 @@ ul {
     grid-template-columns: 1fr;
   }
 }
+
+
+
+
+
+
+/* =========================================================
+   CONTACT PAGE FORM STYLING (For Home page form layout)
+   ========================================================= */
+
+.contact-form form .field {
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form form label {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--blue-700);
+  margin-bottom: 8px;
+}
+
+.contact-form form input,
+.contact-form form select {
+  width: 100%;
+  padding: 13px 16px;
+  border: 1.5px solid var(--line);
+  border-radius: var(--r-sm);
+  font-family: var(--font-sans);
+  font-size: 14.5px;
+  color: var(--ink);
+  background: var(--paper-2);
+  transition: all 0.2s var(--ease);
+}
+
+.contact-form form input:focus,
+.contact-form form select:focus {
+  outline: none;
+  border-color: var(--blue-600);
+  background: #fff;
+  box-shadow: 0 0 0 4px rgba(29, 78, 216, 0.12);
+}
+
+.contact-form form button.btn-orange {
+  width: 100%;
+  justify-content: center;
+  margin-top: 12px;
+  padding: 16px 24px;
+  font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+   WHATSAPP FLOATING BUTTON
+   ========================================================= */
+
+.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 90px;
+  /* Scroll top button se thoda upar */
+  right: 30px;
+  background-color: #25d366;
+  /* WhatsApp Official Green */
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 32px;
+  box-shadow: 0px 4px 15px rgba(37, 211, 102, 0.4);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  animation: pulse-green 2s infinite;
+}
+
+.whatsapp-float:hover {
+  background-color: #128C7E;
+  color: #FFF;
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 20px rgba(18, 140, 126, 0.6);
+  animation: none;
+}
+
+/* Halka sa pulse animation taaki dhyan jaye */
+@keyframes pulse-green {
+  0% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+  }
+
+  70% {
+    box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  }
+}
+
+/* Mobile ke liye adjust */
+@media (max-width: 720px) {
+  .whatsapp-float {
+    width: 50px;
+    height: 50px;
+    font-size: 26px;
+    bottom: 80px;
+    right: 20px;
+  }
+}

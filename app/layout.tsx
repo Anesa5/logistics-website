@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import ScrollToTop from '@/components/ScrollToTop';
+import WhatsAppButton from '@/components/WhatsAppButton'; // <-- WhatsApp Button Import
 import './globals.css';
 
 export const metadata: Metadata = {
@@ -30,6 +31,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           {children}
           <Footer />
           <ScrollToTop />
+          <WhatsAppButton /> {/* <-- Yahan Add Kiya Hai */}
         </div>
       </body>
     </html>

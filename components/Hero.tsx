@@ -1,32 +1,15 @@
 'use client';
 
 import Link from 'next/link';
-import { useState } from 'react';
-import { SERVICES } from '@/lib/data';
 
 export default function Hero() {
-    const [name, setName] = useState('');
-    const [email, setEmail] = useState('');
-    const [sent, setSent] = useState(false);
-
-    const handleSubmit = () => {
-        if (!name.trim() || !email.trim()) {
-            alert('Please fill in your name and email so we can reply.');
-            return;
-        }
-        setSent(true);
-        setTimeout(() => {
-            setSent(false);
-            setName('');
-            setEmail('');
-        }, 3200);
-    };
-
     return (
         <section className="hero">
             <div className="container hero-inner">
+
+                {/* LEFT SIDE: TEXT */}
                 <div className="reveal is-visible">
-                    <span className="hero-eyebrow">Reliable Logistics. Smarter Shipping. Better Connections.</span>
+                    <span className="hero-eyebrow">Reliable Logistics. Smarter Shipping.</span>
                     <h1>Connecting Destinations,<br /><span>Delivering Trust</span></h1>
                     <p className="hero-copy">
                         From freight forwarding to global procurement, ICL Logistics helps businesses manage the movement of goods with practical solutions, clear communication, and dependable coordination.
@@ -40,88 +23,80 @@ export default function Hero() {
                             Our Services <i className="fa-solid fa-arrow-right" />
                         </Link>
                     </div>
+                </div>
 
-                    <div className="hero-facts">
-                        <div className="hero-fact">
-                            <i className="fa-solid fa-globe" />
-                            <div><strong>Global Network</strong><span>38+ Countries Served</span></div>
+                {/* RIGHT SIDE: GLASSMORPHIC HIGHLIGHTS CARD */}
+                <div className="reveal is-visible" style={{ width: '100%' }}>
+                    <div style={{
+                        background: 'rgba(255, 255, 255, 0.05)',
+                        backdropFilter: 'blur(16px)',
+                        WebkitBackdropFilter: 'blur(16px)',
+                        border: '1px solid rgba(255, 255, 255, 0.15)',
+                        borderRadius: '24px',
+                        padding: '40px',
+                        boxShadow: '0 30px 60px -20px rgba(0,0,0,0.5)'
+                    }}>
+                        <h3 style={{ color: '#fff', fontSize: '24px', marginBottom: '8px', fontFamily: 'var(--font-display)' }}>
+                            Why Partner With Us?
+                        </h3>
+                        <p style={{ color: 'rgba(255,255,255,0.7)', fontSize: '14px', marginBottom: '30px' }}>
+                            Delivering excellence across the globe.
+                        </p>
+
+                        <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
+                            {/* Highlight 1 */}
+                            <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+                                <div style={{ width: '48px', height: '48px', borderRadius: '12px', background: 'rgba(93, 187, 42, 0.15)', display: 'grid', placeItems: 'center', color: 'var(--orange)', fontSize: '20px' }}>
+                                    <i className="fa-solid fa-globe" />
+                                </div>
+                                <div>
+                                    <strong style={{ display: 'block', color: '#fff', fontSize: '16px' }}>Global Network</strong>
+                                    <span style={{ color: 'rgba(255,255,255,0.6)', fontSize: '13px' }}>Operating in 38+ Countries</span>
+                                </div>
+                            </div>
+
+                            {/* Highlight 2 */}
+                            <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+                                <div style={{ width: '48px', height: '48px', borderRadius: '12px', background: 'rgba(93, 187, 42, 0.15)', display: 'grid', placeItems: 'center', color: 'var(--orange)', fontSize: '20px' }}>
+                                    <i className="fa-solid fa-award" />
+                                </div>
+                                <div>
+                                    <strong style={{ display: 'block', color: '#fff', fontSize: '16px' }}>14+ Years Experience</strong>
+                                    <span style={{ color: 'rgba(255,255,255,0.6)', fontSize: '13px' }}>Trusted since 2012</span>
+                                </div>
+                            </div>
+
+                            {/* Highlight 3 */}
+                            <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+                                <div style={{ width: '48px', height: '48px', borderRadius: '12px', background: 'rgba(93, 187, 42, 0.15)', display: 'grid', placeItems: 'center', color: 'var(--orange)', fontSize: '20px' }}>
+                                    <i className="fa-solid fa-layer-group" />
+                                </div>
+                                <div>
+                                    <strong style={{ display: 'block', color: '#fff', fontSize: '16px' }}>Integrated Solutions</strong>
+                                    <span style={{ color: 'rgba(255,255,255,0.6)', fontSize: '13px' }}>Multiple Service Options</span>
+                                </div>
+                            </div>
+
+                            {/* Highlight 4 */}
+                            <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+                                <div style={{ width: '48px', height: '48px', borderRadius: '12px', background: 'rgba(93, 187, 42, 0.15)', display: 'grid', placeItems: 'center', color: 'var(--orange)', fontSize: '20px' }}>
+                                    <i className="fa-solid fa-headset" />
+                                </div>
+                                <div>
+                                    <strong style={{ display: 'block', color: '#fff', fontSize: '16px' }}>24/7 Support</strong>
+                                    <span style={{ color: 'rgba(255,255,255,0.6)', fontSize: '13px' }}>Real humans, ready to help</span>
+                                </div>
+                            </div>
                         </div>
-                        <div className="hero-fact">
-                            <i className="fa-solid fa-award" />
-                            <div><strong>14 Years</strong><span>In Business</span></div>
-                        </div>
-                        <div className="hero-fact">
-                            <i className="fa-solid fa-layer-group" />
-                            <div><strong>Integrated Solutions</strong><span>Multiple Service Options</span></div>
+
+                        <div style={{ marginTop: '30px', paddingTop: '20px', borderTop: '1px solid rgba(255,255,255,0.1)' }}>
+                            <Link href="/about" style={{ color: 'var(--orange)', fontSize: '14px', fontWeight: 600, display: 'flex', alignItems: 'center', gap: '8px' }}>
+                                Learn more about us <i className="fa-solid fa-arrow-right" />
+                            </Link>
                         </div>
                     </div>
                 </div>
 
-                <div className="hero-art reveal is-visible">
-                    <div className="hero-quote">
-                        <h3>Request a Quote</h3>
-                        <p>Tell us what needs to move. We&apos;ll reply within one business hour.</p>
-
-                        <div className="field">
-                            <label htmlFor="quote-name">Name</label>
-                            <input id="quote-name" type="text" placeholder="Full Name" value={name} onChange={(e) => setName(e.target.value)} />
-                        </div>
-
-                        <div className="field">
-                            <label htmlFor="quote-company">Company Name</label>
-                            <input id="quote-company" type="text" placeholder="Company Name" />
-                        </div>
-
-                        <div className="field">
-                            <label htmlFor="quote-email">Email</label>
-                            <input id="quote-email" type="email" placeholder="you@company.com" value={email} onChange={(e) => setEmail(e.target.value)} />
-                        </div>
-
-                        <div className="field">
-                            <label htmlFor="quote-phone">Phone</label>
-                            <input id="quote-phone" type="tel" placeholder="+92 300 1234567" />
-                        </div>
-
-                        <div className="field">
-                            <label htmlFor="quote-type">Business Type</label>
-                            <select id="quote-type">
-                                <option value="">Select Business Type</option>
-                                <option value="manufacturing">Manufacturing</option>
-                                <option value="retail">Retail & FMCG</option>
-                                <option value="textiles">Textiles & Apparel</option>
-                                <option value="electronics">Electronics</option>
-                                <option value="other">Other</option>
-                            </select>
-                        </div>
-
-                        <div className="field">
-                            <label htmlFor="quote-service">Services Needed</label>
-                            <select id="quote-service" defaultValue="">
-                                {SERVICES.map((s) => (
-                                    <option key={s.slug} value={s.slug}>{s.title}</option>
-                                ))}
-                            </select>
-                        </div>
-
-                        <div className="field">
-                            <label htmlFor="quote-method">Shipping Method</label>
-                            <select id="quote-method">
-                                <option value="air">Air Freight</option>
-                                <option value="ocean">Ocean Freight</option>
-                                <option value="road">Road Transport</option>
-                                <option value="not-sure">Not Sure Yet</option>
-                            </select>
-                        </div>
-
-                        <button
-                            className="btn btn-orange"
-                            onClick={handleSubmit}
-                            style={sent ? { background: '#22c55e', pointerEvents: 'none' } : {}}
-                        >
-                            {sent ? '✓ Request Sent' : <>Send Request <i className="fa-solid fa-paper-plane" /></>}
-                        </button>
-                    </div>
-                </div>
             </div>
         </section>
     );
