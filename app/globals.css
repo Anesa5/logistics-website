@@ -246,7 +246,6 @@ ul {
   font-weight: 800;
 }
 
-
 .logo-img {
   height: 54px;
   width: auto;
@@ -460,7 +459,8 @@ ul {
 /* HERO */
 .hero {
   position: relative;
-  padding: 110px 0 110px;
+  padding: 60px 0;
+  /* Pehle 110px tha, ab bahut compact kar diya */
   background-image: url('https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?w=1920&q=80&auto=format&fit=crop');
   background-size: cover;
   background-position: center;
@@ -474,7 +474,7 @@ ul {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(120deg, rgba(11, 31, 58, 0.82) 0%, rgba(15, 42, 79, 0.68) 45%, rgba(29, 78, 216, 0.55) 100%);
+  background: linear-gradient(120deg, rgba(11, 31, 58, 0.85) 0%, rgba(15, 42, 79, 0.7) 45%, rgba(29, 78, 216, 0.6) 100%);
   z-index: -1;
 }
 
@@ -495,25 +495,29 @@ ul {
 .hero-inner {
   position: relative;
   display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
-  gap: 70px;
+  grid-template-columns: 1.2fr 0.8fr;
+
+  gap: 40px;
+
   align-items: center;
 }
 
 .hero-eyebrow {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
-  font-size: 12px;
+  gap: 8px;
+  font-size: 11px;
   font-weight: 600;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--orange);
   background: rgba(255, 107, 53, 0.14);
   border: 1px solid rgba(255, 107, 53, 0.3);
-  padding: 8px 16px;
+  padding: 6px 14px;
+
   border-radius: 999px;
-  margin-bottom: 26px;
+  margin-bottom: 16px;
+
 }
 
 .hero-eyebrow::before {
@@ -522,16 +526,17 @@ ul {
   height: 6px;
   border-radius: 50%;
   background: var(--orange);
-  box-shadow: 0 0 0 4px rgba(255, 107, 53, 0.2);
+  box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.2);
 }
 
 .hero h1 {
-  font-size: clamp(2.6rem, 5.4vw, 4.2rem);
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+
   font-weight: 800;
-  line-height: 1.05;
+  line-height: 1.15;
   color: #fff;
-  margin-bottom: 26px;
-  letter-spacing: -0.04em;
+  margin-bottom: 16px;
+  letter-spacing: -0.03em;
 }
 
 .hero h1 span {
@@ -539,27 +544,30 @@ ul {
 }
 
 .hero-copy {
-  font-size: 17px;
-  line-height: 1.7;
-  color: rgba(255, 255, 255, 0.82);
-  max-width: 50ch;
-  margin-bottom: 38px;
+  font-size: 14.5px;
+
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.85);
+  max-width: 48ch;
+  margin-bottom: 24px;
 }
 
 .hero-buttons {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
-  margin-bottom: 46px;
+  gap: 10px;
+  margin-bottom: 30px;
+
 }
 
 .btn {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
-  padding: 15px 26px;
+  gap: 8px;
+  padding: 10px 20px;
+  /* Buttons ko aur slim kiya */
   border-radius: 999px;
-  font-size: 14.5px;
+  font-size: 13.5px;
   font-weight: 600;
   transition: all 0.28s var(--ease);
   border: 1.5px solid transparent;
@@ -579,13 +587,13 @@ ul {
 .btn-orange {
   background: var(--orange);
   color: #fff;
-  box-shadow: 0 14px 30px -12px rgba(255, 107, 53, 0.9);
+  box-shadow: 0 8px 20px -8px rgba(93, 187, 42, 0.8);
 }
 
 .btn-orange:hover {
   background: var(--orange-dark);
-  transform: translateY(-3px);
-  box-shadow: 0 20px 40px -14px rgba(232, 84, 14, 0.95);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px -10px rgba(93, 187, 42, 0.9);
 }
 
 .btn-blue {
@@ -613,57 +621,49 @@ ul {
   transform: translateY(-3px);
 }
 
-.btn-outline-blue {
-  background: transparent;
-  border-color: var(--blue-600);
-  color: var(--blue-600);
-}
-
-.btn-outline-blue:hover {
-  background: var(--blue-600);
-  color: #fff;
-}
-
 .hero-facts {
   display: flex;
-  gap: 40px;
+  gap: 30px;
+  /* Pehle 40px tha */
   flex-wrap: wrap;
-  padding-top: 32px;
+  padding-top: 24px;
   border-top: 1px solid rgba(255, 255, 255, 0.14);
 }
 
 .hero-fact {
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 12px;
 }
 
 .hero-fact i {
   display: grid;
   place-items: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 12px;
+  width: 36px;
+  /* Pehle 44px tha */
+  height: 36px;
+  border-radius: 10px;
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.16);
   color: var(--orange);
-  font-size: 17px;
+  font-size: 14px;
   flex-shrink: 0;
 }
 
 .hero-fact strong {
   display: block;
   font-family: var(--font-display);
-  font-size: 24px;
+  font-size: 18px;
+  /* Pehle 24px tha */
   font-weight: 800;
   color: #fff;
   line-height: 1;
   letter-spacing: -0.03em;
-  margin-bottom: 4px;
+  margin-bottom: 2px;
 }
 
 .hero-fact span {
-  font-size: 12px;
+  font-size: 11px;
   color: rgba(255, 255, 255, 0.6);
 }
 
@@ -673,9 +673,10 @@ ul {
 
 .hero-quote {
   background: #fff;
-  border-radius: var(--r-xl);
-  padding: 38px 34px;
-  box-shadow: 0 30px 70px -20px rgba(0, 0, 0, 0.5);
+  border-radius: var(--r-lg);
+  padding: 24px 20px;
+  /* Form ki padding aur kam ki */
+  box-shadow: 0 20px 50px -20px rgba(0, 0, 0, 0.5);
   color: var(--ink);
   position: relative;
 }
@@ -684,8 +685,8 @@ ul {
   content: '';
   position: absolute;
   top: 0;
-  left: 34px;
-  right: 34px;
+  left: 20px;
+  right: 20px;
   height: 4px;
   background: linear-gradient(90deg, var(--blue-600) 0%, var(--orange) 100%);
   border-radius: 4px;
@@ -693,38 +694,41 @@ ul {
 }
 
 .hero-quote h3 {
-  font-size: 22px;
-  margin-bottom: 6px;
-  letter-spacing: -0.03em;
+  font-size: 18px;
+  /* Pehle 20px tha */
+  margin-bottom: 2px;
+  letter-spacing: -0.02em;
 }
 
 .hero-quote>p {
-  font-size: 13.5px;
+  font-size: 12px;
   color: var(--text);
-  margin-bottom: 24px;
-  line-height: 1.6;
+  margin-bottom: 16px;
+  line-height: 1.4;
 }
 
 .hero-quote .field {
-  margin-bottom: 14px;
+  margin-bottom: 10px;
+  /* Gaps aur kam kiye */
 }
 
 .hero-quote label {
   display: block;
-  font-size: 11.5px;
-  font-weight: 600;
+  font-size: 10.5px;
+  font-weight: 700;
   color: var(--blue-700);
-  margin-bottom: 7px;
+  margin-bottom: 4px;
 }
 
 .hero-quote input,
 .hero-quote select {
   width: 100%;
-  padding: 13px 15px;
+  padding: 8px 12px;
+  /* Input fields ko aur patla kiya */
   border: 1.5px solid var(--line);
   border-radius: var(--r-sm);
   font-family: var(--font-sans);
-  font-size: 14px;
+  font-size: 13px;
   color: var(--ink);
   background: var(--paper-2);
   transition: all 0.2s var(--ease);
@@ -735,14 +739,15 @@ ul {
   outline: none;
   border-color: var(--blue-600);
   background: #fff;
-  box-shadow: 0 0 0 4px rgba(29, 78, 216, 0.12);
+  box-shadow: 0 0 0 3px rgba(29, 78, 216, 0.12);
 }
 
 .hero-quote .btn-orange {
   width: 100%;
   justify-content: center;
-  margin-top: 8px;
-  padding: 16px 24px;
+  margin-top: 6px;
+  padding: 12px 20px;
+  /* Form ke andar ka button slim kiya */
 }
 
 /* HIGHLIGHTS STRIP */
@@ -1003,7 +1008,7 @@ ul {
 
 .section-eyebrow {
   display: inline-block;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -1166,7 +1171,9 @@ ul {
   min-height: 480px;
   background-image: url('https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=1000&q=80&auto=format&fit=crop');
   background-size: cover;
+  /* <-- contain ko cover kiya */
   background-position: center;
+  /* <-- Image center mein rahe */
   position: relative;
   overflow: hidden;
   box-shadow: var(--sh-lg);
@@ -1176,7 +1183,7 @@ ul {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(160deg, rgba(29, 78, 216, 0.55) 0%, rgba(11, 31, 58, 0.85) 100%);
+  /*background: linear-gradient(160deg, rgba(29, 78, 216, 0.55) 0%, rgba(11, 31, 58, 0.85) 100%);*/
 }
 
 .split-visual-main i {
@@ -1684,8 +1691,8 @@ ul {
 
 .detail-visual {
   border-radius: var(--r-xl);
-  min-height: 420px;
-  background-image: url('https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?w=1000&q=80&auto=format&fit=crop');
+  min-height: 480px;
+  background-image: url('https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1000&q=80&auto=format&fit=crop');
   background-size: cover;
   background-position: center;
   display: grid;
@@ -1703,7 +1710,7 @@ ul {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(160deg, rgba(29, 78, 216, 0.65) 0%, rgba(11, 31, 58, 0.85) 100%);
+  /*background: linear-gradient(160deg, rgba(29, 78, 216, 0.65) 0%, rgba(11, 31, 58, 0.85) 100%);*/
   z-index: -1;
 }
 
@@ -2603,11 +2610,11 @@ ul {
   }
 
   .hero h1 {
-    font-size: 2.3rem;
+    font-size: clamp(2rem, 8vw, 2.6rem);
   }
 
   .hero-copy {
-    font-size: 15.5px;
+    font-size: 15px;
   }
 
   .hero-buttons {
@@ -2816,5 +2823,113 @@ ul {
     width: 46px;
     height: 46px;
     font-size: 17px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+   PROCESS SECTION (Cards Design)
+   ========================================================= */
+
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.process-card {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--r-lg);
+  padding: 32px 26px;
+  transition: all 0.35s var(--ease);
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  box-shadow: var(--sh-sm);
+}
+
+.process-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--blue-600), var(--orange));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s var(--ease);
+}
+
+.process-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--sh-lg);
+  border-color: transparent;
+}
+
+.process-card:hover::before {
+  transform: scaleX(1);
+}
+
+.process-num {
+  display: inline-block;
+  font-family: var(--font-display);
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--orange);
+  line-height: 1;
+  letter-spacing: -0.04em;
+  margin-bottom: 16px;
+}
+
+.process-card h4 {
+  font-size: 17px;
+  margin-bottom: 10px;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.process-card p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--text);
+  margin: 0;
+}
+
+/* Responsive for Process Cards */
+@media (max-width: 1080px) {
+  .process-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 720px) {
+  .process-grid {
+    grid-template-columns: 1fr;
   }
 }

@@ -26,20 +26,18 @@ export default function Hero() {
         <section className="hero">
             <div className="container hero-inner">
                 <div className="reveal is-visible">
-                    <span className="hero-eyebrow">Reliable Logistics. Smarter Shipping.</span>
+                    <span className="hero-eyebrow">Reliable Logistics. Smarter Shipping. Better Connections.</span>
                     <h1>Connecting Destinations,<br /><span>Delivering Trust</span></h1>
                     <p className="hero-copy">
-                        From freight forwarding to global procurement, ICL Logistics helps
-                        businesses manage the movement of goods with practical solutions, clear
-                        communication, and dependable coordination.
+                        From freight forwarding to global procurement, ICL Logistics helps businesses manage the movement of goods with practical solutions, clear communication, and dependable coordination.
                     </p>
 
                     <div className="hero-buttons">
                         <a href="tel:+923111444224" className="btn btn-orange">
-                            <i className="fa-solid fa-phone" /> Call Us Now
+                            <i className="fa-solid fa-phone" /> Call Us
                         </a>
-                        <Link href="/about" className="btn btn-outline-white">
-                            Learn More <i className="fa-solid fa-arrow-right" />
+                        <Link href="/services" className="btn btn-outline-white">
+                            Our Services <i className="fa-solid fa-arrow-right" />
                         </Link>
                     </div>
 
@@ -50,7 +48,7 @@ export default function Hero() {
                         </div>
                         <div className="hero-fact">
                             <i className="fa-solid fa-award" />
-                            <div><strong>14 Years</strong><span>Industry Experience</span></div>
+                            <div><strong>14 Years</strong><span>In Business</span></div>
                         </div>
                         <div className="hero-fact">
                             <i className="fa-solid fa-layer-group" />
@@ -71,7 +69,7 @@ export default function Hero() {
 
                         <div className="field">
                             <label htmlFor="quote-company">Company Name</label>
-                            <input id="quote-company" type="text" placeholder="Your Company" />
+                            <input id="quote-company" type="text" placeholder="Company Name" />
                         </div>
 
                         <div className="field">
@@ -85,20 +83,20 @@ export default function Hero() {
                         </div>
 
                         <div className="field">
-                            <label htmlFor="quote-businesstype">Business Type</label>
-                            <select id="quote-businesstype">
+                            <label htmlFor="quote-type">Business Type</label>
+                            <select id="quote-type">
                                 <option value="">Select Business Type</option>
-                                <option value="Manufacturing">Manufacturing</option>
-                                <option value="Retail">Retail & FMCG</option>
-                                <option value="Textiles">Textiles & Apparel</option>
-                                <option value="Electronics">Electronics</option>
-                                <option value="Other">Other</option>
+                                <option value="manufacturing">Manufacturing</option>
+                                <option value="retail">Retail & FMCG</option>
+                                <option value="textiles">Textiles & Apparel</option>
+                                <option value="electronics">Electronics</option>
+                                <option value="other">Other</option>
                             </select>
                         </div>
 
                         <div className="field">
                             <label htmlFor="quote-service">Services Needed</label>
-                            <select id="quote-service">
+                            <select id="quote-service" defaultValue="">
                                 {SERVICES.map((s) => (
                                     <option key={s.slug} value={s.slug}>{s.title}</option>
                                 ))}
@@ -106,12 +104,12 @@ export default function Hero() {
                         </div>
 
                         <div className="field">
-                            <label htmlFor="quote-shipping">Shipping Method</label>
-                            <select id="quote-shipping">
-                                <option value="Air">Air Freight</option>
-                                <option value="Ocean">Ocean Freight</option>
-                                <option value="Road">Road Transport</option>
-                                <option value="Not Sure">Not Sure Yet</option>
+                            <label htmlFor="quote-method">Shipping Method</label>
+                            <select id="quote-method">
+                                <option value="air">Air Freight</option>
+                                <option value="ocean">Ocean Freight</option>
+                                <option value="road">Road Transport</option>
+                                <option value="not-sure">Not Sure Yet</option>
                             </select>
                         </div>
 

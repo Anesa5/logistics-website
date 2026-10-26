@@ -10,12 +10,14 @@ const IMAGES = [
 export default function MovingBand() {
     return (
         <section className="moving-band">
+            {/* Sliding Images */}
             <div className="moving-images">
                 {[...IMAGES, ...IMAGES].map((src, i) => (
                     <img key={i} className="moving-img" src={src} alt="" />
                 ))}
             </div>
 
+            {/* Top Marquee Text */}
             <div className="moving-text">
                 <div className="moving-text-track">
                     <span>
@@ -23,23 +25,43 @@ export default function MovingBand() {
                         Ocean Freight <i className="fa-solid fa-ship" />
                         Road Transport <i className="fa-solid fa-truck" />
                         Warehousing <i className="fa-solid fa-warehouse" />
-                        Customs <i className="fa-solid fa-file-contract" />
+                        Customs Clearance <i className="fa-solid fa-file-shield" />
+                        Buyers Consolidation <i className="fa-solid fa-boxes-stacked" />
+                        Global Procurement <i className="fa-solid fa-magnifying-glass-dollar" />
+                        Supply Chain <i className="fa-solid fa-route" />
+                        Project Logistics <i className="fa-solid fa-helmet-safety" />
                     </span>
+                    {/* Duplicate for seamless loop */}
                     <span>
                         Air Freight <i className="fa-solid fa-plane" />
                         Ocean Freight <i className="fa-solid fa-ship" />
                         Road Transport <i className="fa-solid fa-truck" />
                         Warehousing <i className="fa-solid fa-warehouse" />
-                        Customs <i className="fa-solid fa-file-contract" />
+                        Customs Clearance <i className="fa-solid fa-file-shield" />
+                        Buyers Consolidation <i className="fa-solid fa-boxes-stacked" />
+                        Global Procurement <i className="fa-solid fa-magnifying-glass-dollar" />
+                        Supply Chain <i className="fa-solid fa-route" />
+                        Project Logistics <i className="fa-solid fa-helmet-safety" />
                     </span>
                 </div>
             </div>
 
+            {/* Bottom Sub Marquee Text */}
             <div className="moving-text-sub">
                 <div className="moving-text-sub-track">
-                    {['38 Countries', '12,000+ Shipments', '24/7 Support', '16 Years Experience', '97% On-Time', '120 Experts',
-                        '38 Countries', '12,000+ Shipments', '24/7 Support', '16 Years Experience', '97% On-Time', '120 Experts']
-                        .map((t, i) => <span key={i}>{t}</span>)}
+                    {[
+                        '14 Years Experience',
+                        'Global Network',
+                        'On-Time Delivery',
+                        '38+ Countries',
+                        'End-to-End Logistics Solutions',
+
+                        '14 Years Experience',
+                        'Global Network',
+                        'On-Time Delivery',
+                        '38+ Countries',
+                        'End-to-End Logistics Solutions'
+                    ].map((t, i) => <span key={i}>{t}</span>)}
                 </div>
             </div>
         </section>

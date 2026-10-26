@@ -3,20 +3,25 @@
 import { useEffect, useRef, useState } from 'react';
 
 const STATS = [
-    { icon: 'fa-globe', value: 38, label: 'Countries Reached' },
-    { icon: 'fa-truck-fast', value: 12000, label: 'Shipments / Year' },
-    { icon: 'fa-user-tie', value: 120, label: 'Logistics Experts' },
-    { icon: 'fa-thumbs-up', value: 97, label: '% On-Time Rate' },
+    { icon: 'fa-award', value: '14+', label: 'Years of Experience', isNumber: false },
+    { icon: 'fa-arrows-left-right', value: 'End-to-End', label: 'Logistics Solutions', isNumber: false },
+    { icon: 'fa-layer-group', value: 'Multiple', label: 'Freight & Transport Options', isNumber: false },
+    { icon: 'fa-handshake', value: 'One', label: 'Dedicated Logistics Partner', isNumber: false },
 ];
 
-function Stat({ icon, value, label }: { icon: string; value: number; label: string }) {
+function Stat({ icon, value, label, isNumber }: { icon: string; value: string; label: string; isNumber: boolean }) {
     const [count, setCount] = useState(0);
     const ref = useRef<HTMLDivElement>(null);
     const started = useRef(false);
 
     useEffect(() => {
+        if (!isNumber) return;
+
         const el = ref.current;
         if (!el) return;
+
+        const targetNumber = parseInt(value.replace(/\D/g, ''), 10);
+        if (isNaN(targetNumber)) return;
 
         const io = new IntersectionObserver(
             (entries) => {
@@ -28,9 +33,9 @@ function Stat({ icon, value, label }: { icon: string; value: number; label: stri
                         const step = (now: number) => {
                             const t = Math.min((now - start) / duration, 1);
                             const eased = 1 - Math.pow(1 - t, 3);
-                            setCount(Math.floor(value * eased));
+                            setCount(Math.floor(targetNumber * eased));
                             if (t < 1) requestAnimationFrame(step);
-                            else setCount(value);
+                            else setCount(targetNumber);
                         };
                         requestAnimationFrame(step);
                     }
@@ -41,12 +46,17 @@ function Stat({ icon, value, label }: { icon: string; value: number; label: stri
 
         io.observe(el);
         return () => io.disconnect();
-    }, [value]);
+    }, [value, isNumber]);
 
     return (
         <div className="stat reveal is-visible" ref={ref}>
             <i className={`fa-solid ${icon}`} />
-            <strong>{count.toLocaleString()}</strong>
+
+
+            <strong style={{ fontSize: isNumber ? '44px' : '28px', marginTop: isNumber ? '0' : '10px' }}>
+                {isNumber ? count.toLocaleString() : value}
+            </strong>
+
             <span>{label}</span>
         </div>
     );

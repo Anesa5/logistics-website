@@ -1,12 +1,25 @@
+import { airFreightData } from './services-data/air-freight';
+import { oceanFreightData } from './services-data/ocean-freight';
+import { roadTransportData } from './services-data/road-transport';
+import { warehousingData } from './services-data/warehousing';
+import { customsClearanceData } from './services-data/customs-clearance';
+import { buyersConsolidationData } from './services-data/buyers-consolidation';
+import { globalProcurementData } from './services-data/global-procurement';
+import { supplyChainData } from './services-data/supply-chain';
+import { projectLogisticsData } from './services-data/project-logistics';
+
 export type Service = {
     slug: string;
     icon: string;
     image: string;
     title: string;
     short: string;
+    overviewTitle?: string; // 
     intro: string;
     features: string[];
     stats: { value: string; label: string }[];
+    process?: { num: string; title: string; desc: string }[];
+    faqs?: { q: string; a: string }[];
 };
 
 export type Article = {
@@ -36,173 +49,20 @@ export type Testimonial = {
     initials: string;
 };
 
+
 export const SERVICES: Service[] = [
-    {
-        slug: 'air-freight',
-        icon: 'fa-plane',
-        image: 'https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800&q=80&auto=format&fit=crop',
-        title: 'Air Freight',
-        short: 'Time-sensitive cargo transportation with shipment planning and documentation support.',
-        intro: 'Time-sensitive cargo transportation with shipment planning, booking coordination, and documentation support.',
-        features: [
-            'Priority and deferred capacity across major carriers',
-            'Door-to-door pickup, screening and customs clearance',
-            'Charter and hand-carry options for critical parts',
-            'Milestone alerts from uplift through proof of delivery',
-        ],
-        stats: [
-            { value: '24h', label: 'typical door-to-door' },
-            { value: '112', label: 'active trade lanes' },
-        ],
-    },
-    {
-        slug: 'ocean-freight',
-        icon: 'fa-ship',
-        image: 'https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=800&q=80&auto=format&fit=crop',
-        title: 'Ocean Freight',
-        short: 'Commercial cargo shipping with container options and international coordination.',
-        intro: 'Commercial cargo shipping with container options, booking support, and international shipment coordination.',
-        features: [
-            'Named-account space protection on core trade lanes',
-            'FCL, SOC and buyer’s consolidation programmes',
-            'Customs brokerage and origin documentation',
-            'Port-to-door drayage coordination',
-        ],
-        stats: [
-            { value: '38', label: 'countries reached' },
-            { value: '97.4%', label: 'on-time milestone rate' },
-        ],
-    },
-    {
-        slug: 'road-transport',
-        icon: 'fa-truck',
-        image: 'https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=800&q=80&auto=format&fit=crop',
-        title: 'Road Transport',
-        short: 'Cargo transportation by road for domestic and cross-border routes.',
-        intro: 'Cargo transportation by road for domestic movements and supported cross-border routes with full and partial load options.',
-        features: [
-            'Full truckload and less-than-truckload programmes',
-            'Cross-border documentation and customs support',
-            'Temperature-controlled and high-value cargo',
-            'Real-time GPS tracking with ETA updates',
-        ],
-        stats: [
-            { value: '4.8/5', label: 'partner satisfaction' },
-            { value: '18 min', label: 'average first response' },
-        ],
-    },
-    {
-        slug: 'warehousing',
-        icon: 'fa-warehouse',
-        image: 'https://images.unsplash.com/photo-1553413077-190dd305871c?w=800&q=80&auto=format&fit=crop',
-        title: 'Warehousing',
-        short: 'Storage and cargo handling solutions to support inventory management.',
-        intro: 'Storage and cargo handling solutions to support inventory management and distribution needs.',
-        features: [
-            'Short and long-term storage across 12 countries',
-            'Pick, pack and fulfilment services',
-            'Real-time inventory visibility and reporting',
-            'Integration with your e-commerce and ERP systems',
-        ],
-        stats: [
-            { value: '12', label: 'warehouse hubs' },
-            { value: '99.8%', label: 'inventory accuracy' },
-        ],
-    },
-    {
-        slug: 'custom-clearance',
-        icon: 'fa-file-shield',
-        image: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&q=80&auto=format&fit=crop',
-        title: 'Customs Clearance',
-        short: 'Customs documentation and clearance support for import and export requirements.',
-        intro: 'Customs documentation and clearance support to help shipments meet import and export requirements.',
-        features: [
-            'Import and export clearance in 38 countries',
-            'Duty and tariff optimisation advice',
-            'HS classification and origin management',
-            'AEO-certified brokerage network',
-        ],
-        stats: [
-            { value: '38', label: 'countries cleared' },
-            { value: '2.1h', label: 'average clearance time' },
-        ],
-    },
-    {
-        slug: 'buyers-consolidation',
-        icon: 'fa-boxes-stacked',
-        image: '/css/buyers-consolidation.jpg',
-        title: 'Buyers Consolidation',
-        short: 'Combining shipments from multiple suppliers to reduce freight costs.',
-        intro: 'Combining shipments from multiple suppliers into one consignment to reduce freight costs and simplify handling.',
-        features: [
-            'Multi-supplier pickup and coordination',
-            'Origin consolidation at our partner warehouses',
-            'Mixed-SKU container loading and packing',
-            'One bill of lading, one customs entry',
-        ],
-        stats: [
-            { value: '40%', label: 'average freight savings' },
-            { value: '25+', label: 'origin consolidation hubs' },
-        ],
-    },
-    {
-        slug: 'global-procurement',
-        icon: 'fa-magnifying-glass-dollar',
-        image: '/css/global-procurement.jpg',
-        title: 'Global Procurement',
-        short: 'Sourcing products from international suppliers with negotiation and QC support.',
-        intro: 'Sourcing products from international suppliers, negotiate pricing, purchase coordination & QC support.',
-        features: [
-            'Supplier identification and vetting',
-            'Price negotiation and contract support',
-            'Quality inspection before shipment',
-            'End-to-end procurement-to-delivery handling',
-        ],
-        stats: [
-            { value: '500+', label: 'vetted suppliers' },
-            { value: '18%', label: 'average cost reduction' },
-        ],
-    },
-    {
-        slug: 'supply-chain',
-        icon: 'fa-route',
-        image: '/css/supply-chain.png',
-        title: 'Supply Chain',
-        short: 'Supply chain coordination covering sourcing, transportation, and delivery.',
-        intro: 'Supply chain coordination covering sourcing, transportation, and delivery to keep goods moving efficiently.',
-        features: [
-            'End-to-end control tower coordination',
-            'Multi-modal routing and mode optimisation',
-            'Inventory-in-transit visibility and reporting',
-            'Exception management with named operators',
-        ],
-        stats: [
-            { value: '24/7', label: 'human support coverage' },
-            { value: '14 yr', label: 'moving business forward' },
-        ],
-    },
-    {
-        slug: 'project-logistics',
-        icon: 'fa-helmet-safety',
-        image: 'https://images.unsplash.com/photo-1586528116311-ad8ed7c508b0?w=800&q=80&auto=format&fit=crop',
-        title: 'Project Logistics',
-        short: 'Coordinated cargo planning and transportation for complex projects.',
-        intro: 'Coordinated cargo planning and transportation for complex projects, heavy equipment, and time-sensitive deliveries.',
-        features: [
-            'Heavy lift and out-of-gauge cargo planning',
-            'Route surveys and permit coordination',
-            'On-site supervision and project management',
-            'Time-sensitive delivery scheduling',
-        ],
-        stats: [
-            { value: '100+', label: 'projects handled' },
-            { value: '0', label: 'safety incidents' },
-        ],
-    },
+    airFreightData,
+    oceanFreightData,
+    roadTransportData,
+    warehousingData,
+    customsClearanceData,
+    buyersConsolidationData,
+    globalProcurementData,
+    supplyChainData,
+    projectLogisticsData,
 ];
 
 export const ARTICLES: Article[] = [
-    // Same as before...
     {
         slug: 'the-new-rules-of-resilient-supply-chains',
         tag: 'Perspective',
@@ -245,6 +105,48 @@ export const ARTICLES: Article[] = [
             'It is unglamorous work. It is also the difference between a shipment that arrives and a shipment that arrives on time.',
         ],
     },
+    {
+        slug: 'customs-mistakes-that-cost-weeks',
+        tag: 'Customs',
+        icon: 'fa-file-shield',
+        date: 'April 30, 2024',
+        readTime: '07 min read',
+        title: 'Customs mistakes that cost weeks',
+        excerpt: 'The five documentation errors we see most often — and how to avoid them.',
+        body: [
+            'Customs delays almost never come from the goods themselves. They come from paperwork that was filled in too fast, or not at all.',
+            'The five we see most: mismatched invoice values, wrong HS codes, missing certificates of origin, vague goods descriptions, and an importer of record who is not actually set up in the destination country.',
+            'Each one is boring. Each one can hold a shipment for days. The fix is a pre-clearance checklist you actually use.',
+        ],
+    },
+    {
+        slug: 'the-real-cost-of-cheap-freight',
+        tag: 'Perspective',
+        icon: 'fa-calculator',
+        date: 'April 18, 2024',
+        readTime: '05 min read',
+        title: 'The real cost of cheap freight',
+        excerpt: 'Why the lowest quote is rarely the lowest total cost of ownership.',
+        body: [
+            'Cheap freight is a story told on the invoice. Expensive freight is a story told six weeks later, when a customer leaves.',
+            'The line item you should be comparing is not the per-container rate. It is the total cost of moving a unit of product from origin to a happy customer, including delays, damage, and the staff time spent chasing updates.',
+            'When you compare that number, the cheapest quote rarely wins.',
+        ],
+    },
+    {
+        slug: 'building-a-control-tower-that-works',
+        tag: 'Operations',
+        icon: 'fa-satellite-dish',
+        date: 'April 5, 2024',
+        readTime: '08 min read',
+        title: 'Building a control tower that works',
+        excerpt: 'What separates useful supply chain visibility from another dashboard nobody opens.',
+        body: [
+            'Most control towers fail for the same reason: they show everything and own nothing. A dashboard is not a control tower. A control tower is a team with authority.',
+            'The useful version has three parts: one source of truth, a small set of alerts that actually fire, and a named person who acts on each one.',
+            'If any of those three is missing, the tower is decoration.',
+        ],
+    },
 ];
 
 export const TEAM: TeamMember[] = [
@@ -256,7 +158,6 @@ export const TEAM: TeamMember[] = [
         twitter: '#',
         email: 'info@icllogistics.com',
     },
-    // Add other team members if you have them, otherwise keep just CEO
 ];
 
 export const TESTIMONIALS: Testimonial[] = [

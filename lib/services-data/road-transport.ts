@@ -1,0 +1,35 @@
+export const roadTransportData = {
+    slug: 'road-transport',
+    icon: 'fa-truck',
+    image: 'https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=800&q=80&auto=format&fit=crop',
+    title: 'Road Transport',
+    short: 'Cargo transportation by road for domestic and cross-border routes',
+    overviewTitle: 'Reliable Road Transport Services From Pickup To Destination',
+    intro: 'Road transport connects suppliers, warehouses, ports, distribution centres, and customers. ICL Logistics helps coordinate cargo transportation according to shipment size, delivery requirements, and supported routes.',
+    features: [
+        'Cargo and vehicle requirement assessment.',
+        'Pickup and delivery coordination.',
+        'Suitable vehicle and load planning.',
+        'Transportation scheduling.',
+        'Coordination of relevant transport documentation.',
+        'Delivery status communication, where available.',
+        'Depending on route and capacity, requirements may include full truckload (FTL), less-than-truckload (LTL), container haulage, or dedicated cargo transportation.',
+    ],
+    stats: [
+        { value: 'Flexible', label: 'Vehicle Options' },
+        { value: 'Integrated', label: 'Freight Solutions' },
+    ],
+    process: [
+        { num: '01', title: 'Requirements Assessment', desc: 'We review your cargo details, pickup location, destination, and delivery timeline.' },
+        { num: '02', title: 'Transport Planning', desc: 'We coordinate suitable vehicles, routes, and transportation arrangements.' },
+        { num: '03', title: 'Shipment Execution', desc: 'We coordinate cargo pickup, transit, and shipment updates throughout the journey.' },
+        { num: '04', title: 'Delivery & Confirmation', desc: 'We coordinate final delivery and confirm completion with the required documentation.' },
+    ],
+    faqs: [
+        { q: 'Which locations can be served?', a: 'Nationwide locations. However, coverage depends on the route, destination, and transportation requirements.' },
+        { q: 'What vehicle types are available?', a: 'Vehicle options depend on cargo size, weight, type, and delivery requirements.' },
+        { q: 'What types of cargo can be transported by road?', a: 'General commercial goods, industrial materials, textiles, and other eligible cargo can be transported.' },
+        { q: 'Can road transport be combined with sea freight?', a: 'Yes, road transportation can be coordinated with sea freight for inland cargo movement.' },
+        { q: 'Can transportation be arranged for urgent shipments?', a: 'Yes, available transport options can be assessed according to your delivery timeline and route.' },
+    ],
+};
