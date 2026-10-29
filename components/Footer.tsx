@@ -9,7 +9,7 @@ export default function Footer() {
             <div className="container footer-top">
                 <div>
                     <Link href="/" className="logo">
-                        <img src="/logo.png" alt="ICL Logistics Pvt. Ltd." className="logo-img" />
+                        <img src="/logo.jpg" alt="ICL Logistics Pvt. Ltd." className="logo-img" />
                     </Link>
                     <p className="footer-about">
                         Global freight, thoughtfully coordinated. From the first mile to
@@ -58,7 +58,7 @@ export default function Footer() {
                     <div className="footer-contact">
                         <div className="footer-contact-item">
                             <i className="fa-solid fa-location-dot" />
-                            <span>Plaza No. 543, Block A, Main Boulevard, Jubilee Town, Lahore, Pakistan</span>
+                            <span>House NO, 549D, Sabzazar Block E Sabzazar housing Scheme Phase 1 & 2 Lahore, 56000</span>
                         </div>
                         <div className="footer-contact-item">
                             <i className="fa-solid fa-phone" />

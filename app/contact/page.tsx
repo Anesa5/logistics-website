@@ -63,7 +63,7 @@ export default function ContactPage() {
                                 <div className="contact-info-icon"><i className="fa-solid fa-location-dot" /></div>
                                 <div>
                                     <small>Visit Us</small>
-                                    <strong> Plaza No. 543, Block A, Main Boulevard, Jubilee Town, Lahore, Pakistan</strong>
+                                    <strong>House NO, 549D, Sabzazar Block E Sabzazar housing Scheme Phase 1 & 2 Lahore, 56000</strong>
                                 </div>
                             </div>
 
