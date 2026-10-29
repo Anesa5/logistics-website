@@ -3,6 +3,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import ScrollToTop from '@/components/ScrollToTop';
 import WhatsAppButton from '@/components/WhatsAppButton'; // <-- WhatsApp Button Import
+import CallButton from '@/components/CallButton';
 import './globals.css';
 
 export const metadata: Metadata = {
@@ -32,6 +33,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <Footer />
           <ScrollToTop />
           <WhatsAppButton /> {/* <-- Yahan Add Kiya Hai */}
+          <CallButton />
         </div>
       </body>
     </html>

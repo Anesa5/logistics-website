@@ -17,16 +17,24 @@ export default function Header() {
             <div className="topbar">
                 <div className="container topbar-inner">
                     <div className="topbar-left">
-                        <span className="topbar-item"><i className="fa-solid fa-envelope" /> info@icllogisticgroup.com</span>
+                        <span className="topbar-item"><i className="fa-solid fa-envelope" /> icllogistics.com.pk</span>
                         <span className="topbar-item"><i className="fa-solid fa-phone" /> +92 3-111-444-224</span>
                         <span className="topbar-item"><i className="fa-solid fa-clock" /> Mon – Sat: 8:00 – 18:00</span>
                     </div>
                     <div className="topbar-right">
                         <div className="topbar-social">
-                            <a href="#" aria-label="Facebook"><i className="fa-brands fa-facebook-f" /></a>
-                            <a href="#" aria-label="Twitter"><i className="fa-brands fa-twitter" /></a>
-                            <a href="#" aria-label="LinkedIn"><i className="fa-brands fa-linkedin-in" /></a>
-                            <a href="#" aria-label="Instagram"><i className="fa-brands fa-instagram" /></a>
+                            <a href="https://www.facebook.com/globalventurepl" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                                <i className="fa-brands fa-facebook-f" />
+                            </a>
+                            <a href="https://x.com/globalventurepl" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                                <i className="fa-brands fa-twitter" />
+                            </a>
+                            <a href="https://www.linkedin.com/company/global-venturepl" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                                <i className="fa-brands fa-linkedin-in" />
+                            </a>
+                            <a href="https://www.instagram.com/globalventurepl/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                                <i className="fa-brands fa-instagram" />
+                            </a>
                         </div>
                     </div>
                 </div>

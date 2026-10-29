@@ -66,7 +66,7 @@ export default function Footer() {
                         </div>
                         <div className="footer-contact-item">
                             <i className="fa-solid fa-envelope" />
-                            <a href="mailto:info@icllogisticgroup.com">info@icllogisticgroup.com</a>
+                            <a href="mailto:icllogistics.com.pk">icllogistics.com.pk</a>
                         </div>
                     </div>
 

@@ -1172,7 +1172,7 @@ ul {
   background-image: url('https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=1000&q=80&auto=format&fit=crop');
   background-size: cover;
   /* <-- contain ko cover kiya */
-  background-position: center;
+  background-position: center 20%;
   /* <-- Image center mein rahe */
   position: relative;
   overflow: hidden;
@@ -3051,5 +3051,66 @@ ul {
     font-size: 26px;
     bottom: 80px;
     right: 20px;
+  }
+}
+
+/* =========================================================
+   CALL FLOATING BUTTON (Left Side)
+   ========================================================= */
+
+.call-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 90px;
+  /* WhatsApp button ke barabar height */
+  left: 30px;
+  /* Left side par set kiya */
+  background-color: #1A4585;
+  /* Aapki website ka Navy Blue theme color */
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 26px;
+  box-shadow: 0px 4px 15px rgba(26, 69, 133, 0.4);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  animation: pulse-blue 2s infinite;
+}
+
+.call-float:hover {
+  background-color: #0A1E3F;
+  color: #FFF;
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 20px rgba(10, 30, 63, 0.6);
+  animation: none;
+}
+
+/* Halka sa pulse animation dhyan khinchne ke liye */
+@keyframes pulse-blue {
+  0% {
+    box-shadow: 0 0 0 0 rgba(26, 69, 133, 0.7);
+  }
+
+  70% {
+    box-shadow: 0 0 0 15px rgba(26, 69, 133, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(26, 69, 133, 0);
+  }
+}
+
+/* Mobile ke liye adjust */
+@media (max-width: 720px) {
+  .call-float {
+    width: 50px;
+    height: 50px;
+    font-size: 22px;
+    bottom: 80px;
+    left: 20px;
   }
 }

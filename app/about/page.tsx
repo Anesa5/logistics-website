@@ -88,7 +88,7 @@ export default function AboutPage() {
             <section className="section">
                 <div className="container split">
                     <Reveal className="split-visual">
-                        <div className="split-visual-main" style={{ backgroundImage: "url('/css/about-image.jpg')" }}>
+                        <div className="split-visual-main" style={{ backgroundImage: "url('/css/about.jpeg')" }}>
                         </div>
                         <div className="split-visual-badge">
                             <strong>2012</strong>
