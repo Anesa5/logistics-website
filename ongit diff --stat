@@ -1,0 +1,22 @@
+[1mdiff --git a/next.config.js b/next.config.js[m
+[1mindex fb94a16..0cbf6ef 100644[m
+[1m--- a/next.config.js[m
+[1m+++ b/next.config.js[m
+[36m@@ -1,11 +1,15 @@[m
+[32m+[m
+ /** @type {import('next').NextConfig} */[m
+ const nextConfig = {[m
+[32m+[m[32m    output: 'export',[m
+     reactStrictMode: true,[m
+[32m+[m[32m    trailingSlash: true,[m
+     images: {[m
+[32m+[m[32m        unoptimized: true,[m
+         remotePatterns: [[m
+             { protocol: 'https', hostname: 'images.unsplash.com' },[m
+         ],[m
+     },[m
+ };[m
+ [m
+[31m-module.exports = nextConfig;[m
+\ No newline at end of file[m
+[32m+[m[32mmodule.exports = nextConfig;[m

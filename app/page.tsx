@@ -156,47 +156,77 @@ export default function HomePage() {
       </section>
 
       {/* 6. CERTIFICATIONS / LOGOS SECTION */}
-      <section className="section" style={{ padding: '60px 0' }}>
+      {/* 5. CERTIFICATIONS / LOGOS SECTION */}
+      <section className="section section-bg-gray" style={{ padding: '60px 0' }}>
         <div className="container">
           <div className="section-head reveal is-visible" style={{ marginBottom: '40px' }}>
             <span className="section-eyebrow">Our Standards</span>
             <h2>Industry Memberships & Certifications</h2>
             <p>Committed to professional standards, reliable coordination, and trusted logistics partnerships.</p>
           </div>
-          <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '50px', alignItems: 'center' }}>
+          <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '40px', alignItems: 'center' }}>
 
             <Reveal delay={100}>
-              <div style={{ textAlign: 'center', width: '180px' }}>
-                <img src="/css/logo-piffa.png" alt="PIFFA" style={{ height: '110px', objectFit: 'contain', margin: '0 auto 15px' }} />
-                <h4 style={{ fontSize: '16px', fontWeight: 700, color: 'var(--ink)', margin: 0 }}>PIFFA</h4>
+              <div style={{ textAlign: 'center', width: '160px' }}>
+                <img src="/css/logo-piffa.png" alt="PIFFA" style={{ height: '90px', objectFit: 'contain', margin: '0 auto 15px' }} />
+                <h4 style={{ fontSize: '15px', fontWeight: 700, color: 'var(--ink)', margin: 0 }}>PIFFA</h4>
               </div>
             </Reveal>
 
             <Reveal delay={200}>
-              <div style={{ textAlign: 'center', width: '180px' }}>
-                <img src="/css/logo-fiata.png" alt="FIATA" style={{ height: '110px', objectFit: 'contain', margin: '0 auto 15px' }} />
-                <h4 style={{ fontSize: '16px', fontWeight: 700, color: 'var(--ink)', margin: 0 }}>FIATA</h4>
+              <div style={{ textAlign: 'center', width: '160px' }}>
+                <img src="/css/logo-fiata.png" alt="FIATA" style={{ height: '90px', objectFit: 'contain', margin: '0 auto 15px' }} />
+                <h4 style={{ fontSize: '15px', fontWeight: 700, color: 'var(--ink)', margin: 0 }}>FIATA</h4>
               </div>
             </Reveal>
 
             <Reveal delay={300}>
-              <div style={{ textAlign: 'center', width: '180px' }}>
-                <img src="/css/logo-lcci.png" alt="LCCI" style={{ height: '110px', objectFit: 'contain', margin: '0 auto 15px' }} />
-                <h4 style={{ fontSize: '16px', fontWeight: 700, color: 'var(--ink)', margin: 0 }}>LCCI</h4>
+              <div style={{ textAlign: 'center', width: '160px' }}>
+                <img src="/css/logo-lcci.png" alt="LCCI" style={{ height: '90px', objectFit: 'contain', margin: '0 auto 15px' }} />
+                <h4 style={{ fontSize: '15px', fontWeight: 700, color: 'var(--ink)', margin: 0 }}>LCCI</h4>
               </div>
             </Reveal>
 
             <Reveal delay={400}>
-              <div style={{ textAlign: 'center', width: '180px' }}>
-                <img src="/css/logo-iso.png" alt="ISO 9001" style={{ height: '110px', objectFit: 'contain', margin: '0 auto 15px' }} />
-                <h4 style={{ fontSize: '16px', fontWeight: 700, color: 'var(--ink)', margin: 0 }}>ISO 9001</h4>
+              <div style={{ textAlign: 'center', width: '160px' }}>
+                <img src="/css/logo-iso.png" alt="ISO 9001" style={{ height: '90px', objectFit: 'contain', margin: '0 auto 15px' }} />
+                <h4 style={{ fontSize: '15px', fontWeight: 700, color: 'var(--ink)', margin: 0 }}>ISO 9001</h4>
               </div>
             </Reveal>
 
             <Reveal delay={500}>
-              <div style={{ textAlign: 'center', width: '180px' }}>
-                <img src="/css/logo-iata.png" alt="IATA" style={{ height: '110px', objectFit: 'contain', margin: '0 auto 15px' }} />
-                <h4 style={{ fontSize: '16px', fontWeight: 700, color: 'var(--ink)', margin: 0 }}>IATA</h4>
+              <div style={{ textAlign: 'center', width: '160px' }}>
+                <img src="/css/logo-iata.png" alt="IATA" style={{ height: '90px', objectFit: 'contain', margin: '0 auto 15px' }} />
+                <h4 style={{ fontSize: '15px', fontWeight: 700, color: 'var(--ink)', margin: 0 }}>IATA</h4>
+              </div>
+            </Reveal>
+
+            {/* Naye 4 Logos */}
+            <Reveal delay={600}>
+              <div style={{ textAlign: 'center', width: '160px' }}>
+                <img src="/css/logo-secp.png" alt="SECP" style={{ height: '90px', objectFit: 'contain', margin: '0 auto 15px' }} />
+                <h4 style={{ fontSize: '15px', fontWeight: 700, color: 'var(--ink)', margin: 0 }}>SECP</h4>
+              </div>
+            </Reveal>
+
+            <Reveal delay={700}>
+              <div style={{ textAlign: 'center', width: '160px' }}>
+                <img src="/css/logo-fbr.png" alt="FBR" style={{ height: '90px', objectFit: 'contain', margin: '0 auto 15px' }} />
+                <h4 style={{ fontSize: '15px', fontWeight: 700, color: 'var(--ink)', margin: 0 }}>FBR</h4>
+              </div>
+            </Reveal>
+
+            <Reveal delay={800}>
+              <div style={{ textAlign: 'center', width: '160px' }}>
+                <img src="/css/logo-psw.png" alt="PSW" style={{ height: '90px', objectFit: 'contain', margin: '0 auto 15px' }} />
+                <h4 style={{ fontSize: '15px', fontWeight: 700, color: 'var(--ink)', margin: 0 }}>PSW</h4>
+              </div>
+            </Reveal>
+
+            <Reveal delay={900}>
+              <div style={{ textAlign: 'center', width: '160px' }}>
+                <img src="/css/logo-pra.png" alt="PRA" style={{ height: '90px', objectFit: 'contain', margin: '0 auto 15px' }} />
+                <h4 style={{ fontSize: '15px', fontWeight: 700, color: 'var(--ink)', margin: 0 }}>PRA</h4>
               </div>
             </Reveal>
 

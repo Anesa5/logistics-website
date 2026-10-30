@@ -37,7 +37,7 @@ export default function ServicesPage() {
                 <div className="container split">
                     <Reveal className="split-copy">
                         <span className="section-eyebrow">Built Around Your Business</span>
-                        <h2>Not a Menu. A Connected System.</h2>
+                        <h2>Reliable Logistics Solutions Designed Around You</h2>
                         <p>
                             Our services are designed to work together. Add warehousing to
                             your freight programme, pair ocean capacity with last-mile

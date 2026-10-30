@@ -12,8 +12,7 @@ export default function Footer() {
                         <img src="/logo.jpg" alt="ICL Logistics Pvt. Ltd." className="logo-img" />
                     </Link>
                     <p className="footer-about">
-                        Global freight, thoughtfully coordinated. From the first mile to
-                        the last, we keep your business moving across worldwide.
+                        ICL Logistics delivers seamless global freight solutions. From origin to destination, we ensure your cargo moves safely, efficiently, and on time—every time.
                     </p>
                     <div className="footer-social">
                         <a href="https://www.facebook.com/globalventurepl" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
@@ -82,12 +81,8 @@ export default function Footer() {
             </div>
 
             <div className="container footer-bottom">
-                <span>© 2024 ICL Logistics. All rights reserved.</span>
-                <div className="footer-bottom-links">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of Service</a>
-                    <a href="#">Cookies</a>
-                </div>
+                <span>© 2026 ICL Logistics. All rights reserved.</span>
+
             </div>
         </footer>
     );
