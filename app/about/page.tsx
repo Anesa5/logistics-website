@@ -30,10 +30,10 @@ export default function AboutPage() {
                     </Reveal>
 
                     <Reveal>
-                        <h2>ICL focus on the practical needs of businesses moving and sourcing goods.</h2>
+                        <h2>ICL focuses on the practical needs of businesses moving and sourcing goods.</h2>
                         <p>
                             ICL Logistics is a Pakistan-based logistics and freight forwarding company established in 2012. ICL Logistics delivers reliable freight forwarding, transportation, and supply chain solutions backed by industry experience and professional coordination. With a focus on clear communication, operational efficiency, and your business requirements, every shipment is managed with care and commitment.
-                            ICL focus on the practical needs of businesses moving and sourcing goods. As customer requirements evolve, we aim to provide relevant services, thoughtful coordination, and solutions that support changing business operations.
+                            ICL focuses on the practical needs of businesses moving and sourcing goods. As customer requirements evolve, we aim to provide relevant services, thoughtful coordination, and solutions that support changing business operations.
                             Our focus remains on building productive relationships and helping customers navigate the details of logistics with confidence.
 
                         </p>
@@ -122,7 +122,7 @@ export default function AboutPage() {
                 <div className="container">
                     <div className="section-head reveal is-visible">
                         <span className="section-eyebrow" style={{ color: 'var(--orange)' }}>Our Capabilities</span>
-                        <h2>A Coordinated Approach to logistic Requirements.</h2>
+                        <h2>A Coordinated Approach to Logistic Requirements.</h2>
                         <p style={{ color: 'rgba(255,255,255,0.75)' }}>
                             Our service portfolio covers several parts of the logistics process, allowing customers to discuss freight, cargo storage, customs-related requirements, product sourcing, and supply chain coordination with one team.
                         </p>

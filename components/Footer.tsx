@@ -57,7 +57,7 @@ export default function Footer() {
                     <div className="footer-contact">
                         <div className="footer-contact-item">
                             <i className="fa-solid fa-location-dot" />
-                            <span>House NO, 549D, Sabzazar Block E Sabzazar housing Scheme Phase 1 & 2 Lahore, 56000</span>
+                            <span>House No. 549-D, Block E, Sabzazar Housing Scheme Phase 1 & 2, Lahore 56000</span>
                         </div>
                         <div className="footer-contact-item">
                             <i className="fa-solid fa-phone" />
@@ -65,7 +65,7 @@ export default function Footer() {
                         </div>
                         <div className="footer-contact-item">
                             <i className="fa-solid fa-envelope" />
-                            <a href="mailto:icllogistics.com.pk">icllogistics.com.pk</a>
+                            <a href="mailto:icllogistics.com.pk">info@icllogistics.com.pk</a>
                         </div>
                     </div>
 

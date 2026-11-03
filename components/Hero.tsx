@@ -61,7 +61,7 @@ export default function Hero() {
                                     <i className="fa-solid fa-award" />
                                 </div>
                                 <div>
-                                    <strong style={{ display: 'block', color: '#fff', fontSize: '16px' }}>14+ Years Experience</strong>
+                                    <strong style={{ display: 'block', color: '#fff', fontSize: '16px' }}>14+ Years of Experience</strong>
                                     <span style={{ color: 'rgba(255,255,255,0.6)', fontSize: '13px' }}>Trusted since 2012</span>
                                 </div>
                             </div>

@@ -50,13 +50,13 @@ export default function MovingBand() {
             <div className="moving-text-sub">
                 <div className="moving-text-sub-track">
                     {[
-                        '14 Years Experience',
+                        '14+ Years of Experience',
                         'Global Network',
                         'On-Time Delivery',
                         '38+ Countries',
                         'End-to-End Logistics Solutions',
 
-                        '14 Years Experience',
+                        '14+ Years of Experience',
                         'Global Network',
                         'On-Time Delivery',
                         '38+ Countries',

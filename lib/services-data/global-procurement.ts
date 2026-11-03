@@ -16,7 +16,7 @@ export const globalProcurementData = {
     ],
     stats: [
         { value: 'Global', label: 'Supplier Network' },
-        { value: 'Quality', label: '& Cost Effective' },
+        { value: 'Quality ', label: '& Cost-Effective' },
     ],
     process: [
         { num: '01', title: 'Requirements Assessment', desc: 'We understand your product specifications, quality standards, budget, and sourcing needs.' },

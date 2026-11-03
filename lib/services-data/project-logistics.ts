@@ -16,7 +16,7 @@ export const projectLogisticsData = {
     ],
     stats: [
         { value: 'Multimodal', label: 'Freight Options' },
-        { value: 'Heavy', label: '& Oversized Cargo' },
+        { value: 'Heavy ', label: '& Oversized Cargo' },
     ],
     process: [
         { num: '01', title: 'Project Assessment', desc: 'We review cargo dimensions, weight, origin, destination, handling needs, and project timelines.' },

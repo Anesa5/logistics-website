@@ -117,7 +117,7 @@ export default function HomePage() {
                 'Multiple Service Options',
                 'Comprehensive Logistics Solutions',
                 'Reliable Shipment Coordination',
-                'Business-Focused Solutions and budget',
+                'Business-Focused Solutions That Fit Your budget',
                 'Transparent Communication',
                 'Customer-Centric Service',
                 'Professional Service Standards',

@@ -63,7 +63,7 @@ export default function ContactPage() {
                                 <div className="contact-info-icon"><i className="fa-solid fa-location-dot" /></div>
                                 <div>
                                     <small>Visit Us</small>
-                                    <strong>House NO, 549D, Sabzazar Block E Sabzazar housing Scheme Phase 1 & 2 Lahore, 56000</strong>
+                                    <strong>House No. 549-D, Block E, Sabzazar Housing Scheme Phase 1 & 2, Lahore 56000</strong>
                                 </div>
                             </div>
 
@@ -79,7 +79,7 @@ export default function ContactPage() {
                                 <div className="contact-info-icon"><i className="fa-solid fa-envelope" /></div>
                                 <div>
                                     <small>Email the Team</small>
-                                    <strong><a href="mailto:info@icllogisticgroup.com">info@icllogisticgroup.com</a></strong>
+                                    <strong><a href="mailto:info@icllogisticgroup.com">info@icllogistic.com.pk</a></strong>
                                 </div>
                             </div>
 
