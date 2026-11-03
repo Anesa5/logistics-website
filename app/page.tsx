@@ -24,7 +24,7 @@ export default function HomePage() {
             </div>
             <div className="split-visual-badge">
               <strong>14+</strong>
-              <span>Years Experience</span>
+              <span>Years of Experience</span>
             </div>
           </Reveal>
 
@@ -100,7 +100,7 @@ export default function HomePage() {
             </div>
             <div className="split-visual-badge">
               <strong>14+</strong>
-              <span>Years Experience</span>
+              <span>Years of Experience</span>
             </div>
           </Reveal>
 
