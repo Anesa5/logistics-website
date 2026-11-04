@@ -82,7 +82,7 @@ export default function HomePage() {
         <div className="container">
           <div className="section-head reveal is-visible">
             <span className="section-eyebrow" style={{ color: 'var(--orange)' }}>Experience That Moves Business Forward</span>
-            <h2>Serving business logistics needs since 2012.</h2>
+            <h2>Serving Business Logistics Needs Since 2012.</h2>
             <p style={{ color: 'rgba(255,255,255,0.75)' }}>
               Established in 2012, ICL Logistics delivers practical freight forwarding and logistics solutions through professional coordination, efficient planning, and a clear understanding of business needs. Every shipment is connected to a promise. We keep the full picture in view, so your team can make decisions with confidence.
             </p>
@@ -134,7 +134,7 @@ export default function HomePage() {
         <div className="container">
           <div className="section-head reveal is-visible">
             <span className="section-eyebrow">Industries We Serve</span>
-            <h2>Supporting the Businesses That Keep Trade Moving</h2>
+            <h2>Supporting The Businesses That Keep Trade Moving</h2>
             <p>ICL Logistics supports business shipping and sourcing requirements across relevant sectors, subject to cargo type and service availability.</p>
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: '16px' }}>
@@ -239,7 +239,7 @@ export default function HomePage() {
         <div className="container">
           <div className="section-head reveal is-visible">
             <span className="section-eyebrow">How We Work</span>
-            <h2>From Planning to Delivery, Made Simple</h2>
+            <h2>From Planning To Delivery, Made Simple</h2>
             <p>Clear processes. Reliable coordination. Smooth shipments.</p>
           </div>
           <div className="grid-4" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '24px' }}>

@@ -4,7 +4,7 @@ export const supplyChainData = {
     image: '/css/supply-chain.png',
     title: 'Supply Chain',
     short: 'Supply chain coordination covering sourcing, transportation, and delivery.',
-    overviewTitle: 'Supply Chain Solutions From Sourcing to Delivery.',
+    overviewTitle: 'Supply Chain Solutions From Sourcing To Delivery.',
     intro: 'Supply chain involves several connected activities, from purchasing and transportation to storage and final distribution. ICL Logistics helps businesses coordinate relevant logistics functions around their operational requirements.',
     features: [
         'Review of current logistics requirements.',

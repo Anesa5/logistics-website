@@ -45,9 +45,36 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
                             <span><i className="fa-solid fa-tag" /> {a.tag}</span>
                         </div>
 
-                        {a.body.map((p, i) => (
-                            <p key={i} className={i === 0 ? 'lede' : undefined}>{p}</p>
-                        ))}
+                        {a.body.map((p, i) => {
+                            // Smart check: Agar line choti hai (60 characters se kam) aur usme full stop nahi hai, toh woh Heading hai.
+                            // Ya phir agar line "?" par khatam hoti hai.
+                            const isHeading =
+                                (p.length < 60 && !p.includes('.', p.length - 1)) ||
+                                p.endsWith('?') ||
+                                p === 'Conclusion' ||
+                                p === 'Frequently Asked Questions';
+
+                            if (isHeading) {
+                                return (
+                                    <h3
+                                        key={i}
+                                        style={{
+                                            fontSize: '24px',
+                                            marginTop: '40px',
+                                            marginBottom: '16px',
+                                            color: 'var(--ink)',
+                                            fontFamily: 'var(--font-display)',
+                                            letterSpacing: '-0.02em',
+                                            fontWeight: 700
+                                        }}
+                                    >
+                                        {p}
+                                    </h3>
+                                );
+                            }
+
+                            return <p key={i} className={i === 0 ? 'lede' : undefined}>{p}</p>;
+                        })}
 
                         <blockquote>
                             &quot;The best supply chains are not the ones that never break. They

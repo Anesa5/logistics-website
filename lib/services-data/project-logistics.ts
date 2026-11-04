@@ -4,7 +4,7 @@ export const projectLogisticsData = {
     image: '/css/project.jpg',
     title: 'Project Logistics',
     short: 'End-to-End Logistics Management for Large-Scale Projects',
-    overviewTitle: 'Logistics for Complex Project Requirements',
+    overviewTitle: 'Logistics For Complex Project Requirements',
     intro: 'From industrial equipment to heavy machinery and project materials, ICL Logistics helps coordinate specialised cargo movements, transportation planning, documentation, and delivery arrangements to support your project timelines.',
     features: [
         'Heavy Machinery & Oversized Cargo Transportation',

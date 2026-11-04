@@ -16,7 +16,7 @@ export default function AboutPage() {
                         <i className="fa-solid fa-chevron-right" />
                         <span>About Us</span>
                     </nav>
-                    <h1>Connecting businesses through smarter logistics.</h1>
+                    <h1>Connecting Businesses Through Smarter Logistics.</h1>
 
                 </div>
             </section>
@@ -30,7 +30,7 @@ export default function AboutPage() {
                     </Reveal>
 
                     <Reveal>
-                        <h2>ICL focuses on the practical needs of businesses moving and sourcing goods.</h2>
+                        <h2>ICL Focuses On The Practical Needs Of Businesses Moving And Sourcing Goods.</h2>
                         <p>
                             ICL Logistics is a Pakistan-based logistics and freight forwarding company established in 2012. ICL Logistics delivers reliable freight forwarding, transportation, and supply chain solutions backed by industry experience and professional coordination. With a focus on clear communication, operational efficiency, and your business requirements, every shipment is managed with care and commitment.
                             ICL focuses on the practical needs of businesses moving and sourcing goods. As customer requirements evolve, we aim to provide relevant services, thoughtful coordination, and solutions that support changing business operations.
@@ -98,7 +98,7 @@ export default function AboutPage() {
 
                     <Reveal className="split-copy">
                         <span className="section-eyebrow">CEO's Message</span>
-                        <h2>Building trust through every business relationship.</h2>
+                        <h2>Building Trust Through Every Business Relationship.</h2>
                         <p>
                             At ICL Logistics, we believe that successful logistics begins with understanding our customers' businesses. Every shipment carries a purpose, whether it supports production, fulfils an order, or creates a new business opportunity.
                         </p>
@@ -122,7 +122,7 @@ export default function AboutPage() {
                 <div className="container">
                     <div className="section-head reveal is-visible">
                         <span className="section-eyebrow" style={{ color: 'var(--orange)' }}>Our Capabilities</span>
-                        <h2>A Coordinated Approach to Logistic Requirements.</h2>
+                        <h2>A Coordinated Approach To Logistic Requirements.</h2>
                         <p style={{ color: 'rgba(255,255,255,0.75)' }}>
                             Our service portfolio covers several parts of the logistics process, allowing customers to discuss freight, cargo storage, customs-related requirements, product sourcing, and supply chain coordination with one team.
                         </p>
@@ -136,7 +136,7 @@ export default function AboutPage() {
                 <div className="container split">
                     <Reveal className="split-copy">
                         <span className="section-eyebrow">Why Work With Us?</span>
-                        <h2>A Practical Partner for Your Logistics Needs</h2>
+                        <h2>A Practical Partner For Your Logistics Needs</h2>
                         <ul className="check-list">
                             {[
                                 'Experience in the logistics sector since 2012.',
@@ -165,7 +165,7 @@ export default function AboutPage() {
             <section className="cta-band">
                 <div className="container cta-inner">
                     <div>
-                        <h2>Let's Build a Better Way to Move Your Cargo.</h2>
+                        <h2>Let's Build A Better Way To Move Your Cargo.</h2>
                         <p>Whether you need freight forwarding, sourcing assistance, or ongoing logistics support, contact ICL Logistics to discuss your business needs.</p>
                     </div>
                     <div className="cta-actions">

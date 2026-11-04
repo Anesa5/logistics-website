@@ -109,23 +109,31 @@ export default async function ServiceDetail({ params }: { params: Promise<{ slug
                                             slug === 'supply-chain' ? 'Our approach' : 'Advantages'}
                                 </span>
                                 <h2 style={{ color: '#fff', fontSize: 'clamp(1.8rem, 3.4vw, 2.4rem)' }}>
-                                    {slug === 'air-freight' && 'Why choose air freight?'}
-                                    {slug === 'ocean-freight' && 'Why choose ocean freight?'}
-                                    {slug === 'road-transport' && 'Why choose road transport?'}
+                                    {slug === 'air-freight' && 'Why Choose Air Freight?'}
+                                    {slug === 'ocean-freight' && 'Why choose Ocean Freight?'}
+                                    {slug === 'road-transport' && 'Why Choose Road Transport?'}
                                     {slug === 'warehousing' && 'Warehousing Solutions'}
                                     {slug === 'customs-clearance' && 'Why Choose Customs Clearance Services?'}
-                                    {slug === 'buyers-consolidation' && 'Why Consolidated Shipment: Benefits for buyers'}
+                                    {slug === 'buyers-consolidation' && 'Why Consolidated Shipment: Benefits For buyers'}
                                     {slug === 'global-procurement' && 'Why Choose Global Procurement Services?'}
                                     {slug === 'supply-chain' && 'Why Choose Supply Chain Services'}
                                     {slug === 'project-logistics' && 'Why Choose Project Logistics?'}
                                 </h2>
 
                                 {slug === 'buyers-consolidation' ? (
-                                    <ul className="check-list" style={{ color: 'rgba(255,255,255,0.8)', marginTop: '20px' }}>
-                                        <li><i className="fa-solid fa-check" style={{ color: 'var(--orange)' }} /> Fewer separate shipment arrangements.</li>
-                                        <li><i className="fa-solid fa-check" style={{ color: 'var(--orange)' }} /> More organized cargo planning.</li>
-                                        <li><i className="fa-solid fa-check" style={{ color: 'var(--orange)' }} /> Potential savings in shipping and handling costs.</li>
-                                        <li><i className="fa-solid fa-check" style={{ color: 'var(--orange)' }} /> Easier coordination of purchases from multiple suppliers.</li>
+                                    <ul className="check-list" style={{ marginTop: '20px', display: 'flex', flexDirection: 'column', gap: '12px' }}>
+                                        <li style={{ color: 'rgba(255,255,255,0.8)' }}>
+                                            <i className="fa-solid fa-check" style={{ color: 'var(--orange)' }} /> Fewer separate shipment arrangements.
+                                        </li>
+                                        <li style={{ color: 'rgba(255,255,255,0.8)' }}>
+                                            <i className="fa-solid fa-check" style={{ color: 'var(--orange)' }} /> More organized cargo planning.
+                                        </li>
+                                        <li style={{ color: 'rgba(255,255,255,0.8)' }}>
+                                            <i className="fa-solid fa-check" style={{ color: 'var(--orange)' }} /> Potential savings in shipping and handling costs.
+                                        </li>
+                                        <li style={{ color: 'rgba(255,255,255,0.8)' }}>
+                                            <i className="fa-solid fa-check" style={{ color: 'var(--orange)' }} /> Easier coordination of purchases from multiple suppliers.
+                                        </li>
                                     </ul>
                                 ) : (
                                     <p style={{ color: 'rgba(255,255,255,0.8)', fontSize: '16px', lineHeight: 1.7 }}>
@@ -175,13 +183,13 @@ export default async function ServiceDetail({ params }: { params: Promise<{ slug
                         <span className="section-eyebrow">How We Work</span>
                         <h2>
                             {slug === 'ocean-freight' ? 'From Sea Freight Booking to Final Delivery' :
-                                slug === 'road-transport' ? 'Road Transportation, From Planning to Delivery' :
+                                slug === 'road-transport' ? 'Road Transportation, From Planning To Delivery' :
                                     slug === 'warehousing' ? 'Warehousing, From Storage to Dispatch' :
                                         slug === 'customs-clearance' ? 'Customs Clearance, From Documentation to Release' :
                                             slug === 'buyers-consolidation' ? 'Buyer Consolidation, From Multiple Suppliers to One Shipment' :
-                                                slug === 'global-procurement' ? 'Global Procurement, From Sourcing to Delivery' :
-                                                    slug === 'supply-chain' ? 'Supply Chain, From Planning to Delivery' :
-                                                        slug === 'project-logistics' ? 'From Project Planning to Final Delivery' :
+                                                slug === 'global-procurement' ? 'Global Procurement, From Sourcing To Delivery' :
+                                                    slug === 'supply-chain' ? 'Supply Chain, From Planning To Delivery' :
+                                                        slug === 'project-logistics' ? 'From Project Planning To Final Delivery' :
                                                             'Simple Process, Serious Execution'}
                         </h2>
                         <p>
