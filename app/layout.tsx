@@ -8,7 +8,7 @@ import './globals.css';
 
 export const metadata: Metadata = {
   title: 'Logistics — Global Freight & Supply Chain',
-  description: 'Freight forwarding, warehousing, and supply chain coordination across 38 countries.',
+  description: 'Freight forwarding, warehousing, and supply chain coordination across worldwide.',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

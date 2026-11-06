@@ -26,7 +26,7 @@ const DEFAULT_PROCESS = [
 
 const DEFAULT_FAQS = [
     { q: 'How fast can you provide a quote?', a: 'Most quotes are delivered within 24 hours. For urgent shipments, we can turn around pricing in as little as 2 hours.' },
-    { q: 'Do you handle customs clearance?', a: 'Yes. Our AEO-certified brokerage network clears cargo in 38 countries. We handle import and export documentation end-to-end.' },
+    { q: 'Do you handle customs clearance?', a: 'Yes. Our AEO-certified brokerage network clears worldwide delivery. We handle import and export documentation end-to-end.' },
     { q: 'Is my cargo insured?', a: 'Every shipment is covered up to $2M. Additional coverage is available on request for high-value or specialised cargo.' },
     { q: 'Can I track my shipment in real-time?', a: 'Yes. Live GPS tracking is available on every container, with milestone alerts sent to your preferred contact method.' },
 ];

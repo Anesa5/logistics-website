@@ -53,13 +53,13 @@ export default function MovingBand() {
                         '14+ Years of Experience',
                         'Global Network',
                         'On-Time Delivery',
-                        '38+ Countries',
+                        'WorldWide Delivery',
                         'End-to-End Logistics Solutions',
 
                         '14+ Years of Experience',
                         'Global Network',
                         'On-Time Delivery',
-                        '38+ Countries',
+                        'WorldWide Delivery',
                         'End-to-End Logistics Solutions'
                     ].map((t, i) => <span key={i}>{t}</span>)}
                 </div>

@@ -65,8 +65,8 @@ export default function ServicesPage() {
                             <i className="fa-solid fa-route" />
                         </div>
                         <div className="split-visual-badge">
-                            <strong>38</strong>
-                            <span>Countries</span>
+                            <strong>WorldWide</strong>
+                            <span>Delivery</span>
                         </div>
                     </Reveal>
                 </div>

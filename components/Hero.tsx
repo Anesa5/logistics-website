@@ -51,7 +51,7 @@ export default function Hero() {
                                 </div>
                                 <div>
                                     <strong style={{ display: 'block', color: '#fff', fontSize: '16px' }}>Global Network</strong>
-                                    <span style={{ color: 'rgba(255,255,255,0.6)', fontSize: '13px' }}>Operating in 38+ Countries</span>
+                                    <span style={{ color: 'rgba(255,255,255,0.6)', fontSize: '13px' }}>WorldWide Delivery</span>
                                 </div>
                             </div>
 
