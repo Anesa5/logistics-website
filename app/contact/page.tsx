@@ -79,7 +79,7 @@ export default function ContactPage() {
                                 <div className="contact-info-icon"><i className="fa-solid fa-envelope" /></div>
                                 <div>
                                     <small>Email the Team</small>
-                                    <strong><a href="mailto:info@icllogisticgroup.com">info@icllogistic.com.pk</a></strong>
+                                    <strong><a href="mailto:info@icllogistics.com.pk">info@icllogistics.com.pk</a></strong>
                                 </div>
                             </div>
 
@@ -87,7 +87,7 @@ export default function ContactPage() {
                                 <div className="contact-info-icon"><i className="fa-solid fa-clock" /></div>
                                 <div>
                                     <small>Working Hours</small>
-                                    <strong>Mon – Sat: 8:00 – 18:00<br />Sun: Closed</strong>
+                                    <strong>Mon – Sat: 9:00 – 6:00<br />Sun: Closed</strong>
                                 </div>
                             </div>
                         </div>

@@ -19,7 +19,7 @@ export default function Header() {
                     <div className="topbar-left">
                         <span className="topbar-item"><i className="fa-solid fa-envelope" /> info@icllogistics.com.pk</span>
                         <span className="topbar-item"><i className="fa-solid fa-phone" /> +92 3-111-444-224</span>
-                        <span className="topbar-item"><i className="fa-solid fa-clock" /> Mon – Sat: 8:00 – 18:00</span>
+                        <span className="topbar-item"><i className="fa-solid fa-clock" /> Mon – Sat: 9:00 – 6:00</span>
                     </div>
                     <div className="topbar-right">
                         <div className="topbar-social">

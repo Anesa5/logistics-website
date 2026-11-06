@@ -20,6 +20,14 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
 
     const related = ARTICLES.filter((x) => x.slug !== slug).slice(0, 5);
 
+    // Image select karne ka function (Local aur Unsplash dono support karta hai)
+    const getImage = (tag: string) => {
+        if (tag === 'Air Freight') return '/css/air-freight.jpg'; // Aapki local image
+        if (tag === 'Ocean Freight') return 'https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=1200&q=80&auto=format&fit=crop';
+        if (tag === 'Road Transport' || tag === 'Logistics') return 'https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=1200&q=80&auto=format&fit=crop';
+        return 'https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?w=1200&q=80&auto=format&fit=crop';
+    };
+
     return (
         <main>
             <section className="page-hero">
@@ -39,6 +47,16 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
             <section className="section">
                 <div className="container article-grid">
                     <Reveal className="article-body">
+
+                        {/* Featured Image */}
+                        <div style={{ marginBottom: '32px', borderRadius: '16px', overflow: 'hidden', boxShadow: '0 10px 30px -10px rgba(0,0,0,0.15)' }}>
+                            <img
+                                src={getImage(a.tag)}
+                                alt={a.title}
+                                style={{ width: '100%', height: '400px', objectFit: 'cover' }}
+                            />
+                        </div>
+
                         <div className="blog-meta" style={{ marginBottom: 26 }}>
                             <span><i className="fa-solid fa-calendar" /> {a.date}</span>
                             <span><i className="fa-solid fa-clock" /> {a.readTime}</span>
@@ -46,8 +64,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
                         </div>
 
                         {a.body.map((p, i) => {
-                            // Smart check: Agar line choti hai (60 characters se kam) aur usme full stop nahi hai, toh woh Heading hai.
-                            // Ya phir agar line "?" par khatam hoti hai.
+                            // Smart check for Headings
                             const isHeading =
                                 (p.length < 60 && !p.includes('.', p.length - 1)) ||
                                 p.endsWith('?') ||
